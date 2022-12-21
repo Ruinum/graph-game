@@ -58,6 +58,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Nested:
-  - {fileID: 11400000, guid: 2735e9b5765347b4a9fcc354af9c1301, type: 2}
-  - {fileID: 11400000, guid: 629258133e2b81a47ae831d91d7bd57c, type: 2}
+  Nested: []
