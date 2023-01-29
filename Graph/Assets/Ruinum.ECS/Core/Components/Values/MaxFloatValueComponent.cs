@@ -1,6 +1,4 @@
-﻿using Entitas.CodeGeneration.Attributes;
-
-[System.Serializable][Event(EventTarget.Self)]
+﻿[System.Serializable]
 public sealed class MaxFloatValueComponent : FloatValueComponent
 {
 

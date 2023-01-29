@@ -9,12 +9,24 @@
 public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
+        Add(new ComponentDataContainerEventSystem(contexts)); // priority: 0
+        Add(new FloatModifierEventSystem(contexts)); // priority: 0
+        Add(new FloatValueEventSystem(contexts)); // priority: 0
         Add(new MaxFloatValueEventSystem(contexts)); // priority: 0
         Add(new MeshEventSystem(contexts)); // priority: 0
+        Add(new MinFloatValueEventSystem(contexts)); // priority: 0
+        Add(new MoveDistanceEventSystem(contexts)); // priority: 0
         Add(new MovementEventSystem(contexts)); // priority: 0
         Add(new PointEventSystem(contexts)); // priority: 0
         Add(new ScaleVectorEventSystem(contexts)); // priority: 0
+        Add(new SecondFloatValueEventSystem(contexts)); // priority: 0
         Add(new SpriteEventSystem(contexts)); // priority: 0
+        Add(new StartTimeEventSystem(contexts)); // priority: 0
+        Add(new TextEventSystem(contexts)); // priority: 0
+        Add(new AnyTextEventSystem(contexts)); // priority: 0
+        Add(new AnyTextRemovedEventSystem(contexts)); // priority: 0
+        Add(new TimeEventSystem(contexts)); // priority: 0
+        Add(new VelocityEventSystem(contexts)); // priority: 0
         Add(new DestroyedEventSystem(contexts)); // priority: 100
     }
 }

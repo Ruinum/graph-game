@@ -29,6 +29,33 @@ MonoBehaviour:
     m_Address: GameConfigIndex
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: ee640db766f5b8a41978109c249748f6
+    m_Address: ComponentDataContainerConfigIndex
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10ce7b3c6033f194580b6203be80c84d
+    m_Address: Building
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: 781b6bdef7e7b9a4aa47916e07dbd582
+    m_Address: PeopleAmount
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: a51c3c99b66350b4e8110b24c0f8a5ad
+    m_Address: WorldCanvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: def379e558784d34ba268483d3bb441e
+    m_Address: LoaderWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ca25538399a24d548a7afab34a40c2c2
+    m_Address: InputDomainConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:

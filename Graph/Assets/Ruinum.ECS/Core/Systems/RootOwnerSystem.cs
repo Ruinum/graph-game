@@ -1,6 +1,6 @@
 ﻿using Entitas;
-using Ruinum.ECS.Core.Systems.Log;
 using Ruinum.ECS.Extensions;
+using Ruinum.ECS.Services.Index;
 
 namespace Ruinum.ECS.Systems
 {
@@ -34,7 +34,7 @@ namespace Ruinum.ECS.Systems
             {
                 return;
             }
-            //entity.AddOwnerEntityConfigIndexKey(new RootOwnerConfigIndexer.Key{ConfigIndex = entity.ConfigIndexCached, Entity = rootOwner});
+            entity.AddOwnerEntityConfigIndexKey(new RootOwnerConfigIndexer.Key{ConfigIndex = entity.ConfigIndexCached, Entity = rootOwner});
         }
 
         public void TearDown()

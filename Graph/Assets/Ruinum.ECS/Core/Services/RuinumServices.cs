@@ -8,7 +8,7 @@ namespace Ruinum.ECS.Services
         public IAssetService Asset { get; }
         public ILoaderService Loader { get; }
         public IEntityIndexService EntityIndex { get; }
-        public ISceneService SceneService { get; }
+        public ISceneService Scene { get; }
         public IInputService Input { get; }
         
         public RuinumServices(IConfigService config,
@@ -18,7 +18,7 @@ namespace Ruinum.ECS.Services
             Config = config;
             Asset = asset;
             EntityIndex = entityIndex;
-            SceneService = sceneService;
+            Scene = sceneService;
             Input = input;
         }
     }

@@ -57,6 +57,9 @@ namespace Ruinum.ECS.Services
         public static GameConfigIndex LoadConfigIndexEditor() =>
             LoadAssetEditor<GameConfigIndex>(AddressablesConstants.GameConfigIndexAssetName);
 
+        public static ComponentDataContainerConfigIndex LoadComponentDataContainerConfigIndexEditor() =>
+           LoadAssetEditor<ComponentDataContainerConfigIndex>(AddressablesConstants.ComponentDataContainerConfigIndexAssetName);
+
         private static T LoadAssetEditor<T>(string key) where T : ScriptableObject
         {
             var settings = UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings;

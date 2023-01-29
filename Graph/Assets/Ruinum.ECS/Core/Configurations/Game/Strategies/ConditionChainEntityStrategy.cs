@@ -5,7 +5,7 @@ namespace Ruinum.ECS.Configurations.Game.Strategies
 {
     public sealed class ConditionChainEntityStrategy : EntityStrategy
     {
-        [ListDrawerSettings(CustomAddFunction = nameof(Add), Expanded = true)] [HideReferenceObjectPicker][LabelWidth(EditorConstants.SmallLabelWidth)] public StrategyConditionData[] Data = new StrategyConditionData[0];
+        [ListDrawerSettings(CustomAddFunction = nameof(Add), Expanded = true)] [HideReferenceObjectPicker] [LabelWidth(EditorConstants.SmallLabelWidth)] public StrategyConditionData[] Data = new StrategyConditionData[0];
 
         public override bool Process(GameEntity entity)
         {

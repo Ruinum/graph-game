@@ -38,6 +38,7 @@ namespace Ruinum.Editor.Validation
         public static void ValidateConfigIndexes()
         {
             ValidateEditor(ConfigService.LoadConfigIndexEditor());
+            ValidateEditor(ConfigService.LoadComponentDataContainerConfigIndexEditor());
         }
 
         private static void ValidateEditor<T>(IConfigIndex<T> index) where T : ScriptableObject

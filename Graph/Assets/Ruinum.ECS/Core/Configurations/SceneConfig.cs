@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Ruinum.ECS.Core.Configurations
 {
-    [CreateAssetMenu(menuName = EditorConstants.RootMenuPath + nameof(SceneConfig), fileName = nameof(SceneConfig), order = EditorConstants.MenuHighestPriority)]
+    [CreateAssetMenu(menuName = EditorConstants.RootMenuConfigPath + nameof(SceneConfig), fileName = nameof(SceneConfig), order = EditorConstants.MenuHighestPriority)]
     public class SceneConfig : SerializedScriptableObject
     {
         public AssetReference Reference;

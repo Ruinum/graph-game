@@ -7,5 +7,6 @@ namespace Ruinum.ECS.Constants
     {
         public const string GameConfigAssetName = nameof(GameConfig);
         public const string GameConfigIndexAssetName = nameof(GameConfigIndex);
+        public const string ComponentDataContainerConfigIndexAssetName = nameof(ComponentDataContainerConfigIndex);
     }
 }

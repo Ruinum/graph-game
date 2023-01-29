@@ -1,5 +1,6 @@
 ﻿using Ruinum.ECS.Services.Interfaces;
 using Ruinum.ECS.Systems.Game.Strategies;
+using Ruinum.ECS.Systems.Game.Subscribers;
 using Ruinum.ECS.Systems.States;
 
 namespace Ruinum.ECS.Systems.Features
@@ -8,11 +9,17 @@ namespace Ruinum.ECS.Systems.Features
     {
         public GameSystems(Contexts contexts, IGameServices services)
         {
+            Add(new EntityStrategySystem(contexts.game));
+
+            Add(new TargetPublisherSubscriberSystem(contexts.game));
+
+            Add(new GameValueSystems(contexts));
+
+            Add(new PointPublisherSubscriberSystem(contexts.game));
+
             Add(new BeforeMovementStrategySystem(contexts.game));
             Add(new MovementSystems(contexts, services));
             Add(new MovementStrategySystem(contexts.game));
-
-            Add(new EntityStrategySystem(contexts.game));
         }
     }
 }

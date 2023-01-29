@@ -13,8 +13,6 @@ namespace Ruinum.ECS.Core.Systems.Log
 
         public static void Log(this string message, LogType logType)
         {
-            Debug.Log(message);
-
             switch (logType)
             {
                 case LogType.Error:

@@ -4,7 +4,9 @@
     {
         IConfigService Config { get; }
         IAssetService Asset { get; }
+        ILoaderService Loader { get; }
         IEntityIndexService EntityIndex { get; }
+        ISceneService Scene { get; }
         IInputService Input { get; }
     }
 }

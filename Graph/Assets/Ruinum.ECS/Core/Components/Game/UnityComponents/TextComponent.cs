@@ -1,7 +1,7 @@
 using Entitas;
-using Ruinum.ECS.Components;
+using Entitas.CodeGeneration.Attributes;
 
-[EditorComponent][Game]
+[EditorComponent][Game][Event(EventTarget.Self)][Event(EventTarget.Any)][Event(EventTarget.Any, EventType.Removed)]
 public class TextComponent : IComponent
 {
     public string Value;

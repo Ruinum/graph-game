@@ -13,11 +13,16 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
         switch (componentIndex)
         {
             case GameComponentsLookup.Acceleration: ReplaceAcceleration(((AccelerationComponent) fromComponent).Value); return;
+            case GameComponentsLookup.AnyTextListener: ReplaceAnyTextListener(((AnyTextListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.AnyTextRemovedListener: ReplaceAnyTextRemovedListener(((AnyTextRemovedListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.BeforeMovementStrategyCreate: ReplaceBeforeMovementStrategyCreate(((BeforeMovementStrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.BeforeMovementStrategyProcess: ReplaceBeforeMovementStrategyProcess(((BeforeMovementStrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.Camera: isCamera = true; return;
             case GameComponentsLookup.CharacterController: ReplaceCharacterController(((CharacterControllerComponent) fromComponent).Value); return;
+            case GameComponentsLookup.ChildTransformByConfig: ReplaceChildTransformByConfig(((ChildTransformByConfigComponent) fromComponent).Config); return;
             case GameComponentsLookup.ColliderHit: ReplaceColliderHit(((ColliderHitComponent) fromComponent).Value); return;
+            case GameComponentsLookup.ComponentDataContainer: ReplaceComponentDataContainer(((ComponentDataContainerComponent) fromComponent).Value); return;
+            case GameComponentsLookup.ComponentDataContainerListener: ReplaceComponentDataContainerListener(((ComponentDataContainerListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.ConfigIndex: 
                 var newConfigIndex = (ConfigIndexComponent) fromComponent;
                 ReplaceConfigIndex(newConfigIndex.Value,newConfigIndex.EntityIdentity); 
@@ -31,11 +36,20 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.DestroyStrategyProcess: ReplaceDestroyStrategyProcess(((DestroyStrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.EntityType: ReplaceEntityType(((EntityTypeComponent) fromComponent).Value); return;
             case GameComponentsLookup.FloatModifier: ReplaceFloatModifier(((FloatModifierComponent) fromComponent).Value); return;
+            case GameComponentsLookup.FloatModifierListener: ReplaceFloatModifierListener(((FloatModifierListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.FloatValue: ReplaceFloatValue(((FloatValueComponent) fromComponent).Value); return;
+            case GameComponentsLookup.FloatValueListener: ReplaceFloatValueListener(((FloatValueListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.FloatValuePublisher: ReplaceFloatValuePublisher(((FloatValuePublisherComponent) fromComponent).Subscribers); return;
+            case GameComponentsLookup.FloatValueSubscriber: 
+                var newFloatValueSubscriber = (FloatValueSubscriberComponent) fromComponent;
+                ReplaceFloatValueSubscriber(newFloatValueSubscriber.Strategy,newFloatValueSubscriber.Target); 
+                return;
             case GameComponentsLookup.GameCreatedEntity: ReplaceGameCreatedEntity(((GameCreatedEntityComponent) fromComponent).Value); return;
             case GameComponentsLookup.GameObject: ReplaceGameObject(((GameObjectComponent) fromComponent).Value); return;
+            case GameComponentsLookup.GameOwnerTransformChild: isGameOwnerTransformChild = true; return;
             case GameComponentsLookup.GameTarget: ReplaceGameTarget(((GameTargetComponent) fromComponent).Value); return;
             case GameComponentsLookup.Grounded: isGrounded = true; return;
+            case GameComponentsLookup.InputDomainGame: ReplaceInputDomainGame(((InputDomainGameComponent) fromComponent).Config); return;
             case GameComponentsLookup.InstantRotation: isInstantRotation = true; return;
             case GameComponentsLookup.LoadAssetsByLabel: ReplaceLoadAssetsByLabel(((LoadAssetsByLabelComponent) fromComponent).Labels); return;
             case GameComponentsLookup.LoadAssetsOperationCompleted: ReplaceLoadAssetsOperationCompleted(((LoadAssetsOperationCompletedComponent) fromComponent).Status); return;
@@ -46,7 +60,9 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.Mesh: ReplaceMesh(((MeshComponent) fromComponent).Reference); return;
             case GameComponentsLookup.MeshListener: ReplaceMeshListener(((MeshListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.MinFloatValue: ReplaceMinFloatValue(((MinFloatValueComponent) fromComponent).Value); return;
+            case GameComponentsLookup.MinFloatValueListener: ReplaceMinFloatValueListener(((MinFloatValueListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.MoveDistance: ReplaceMoveDistance(((MoveDistanceComponent) fromComponent).Value); return;
+            case GameComponentsLookup.MoveDistanceListener: ReplaceMoveDistanceListener(((MoveDistanceListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.Movement: ReplaceMovement(((MovementComponent) fromComponent).Value); return;
             case GameComponentsLookup.MovementDirection: ReplaceMovementDirection(((MovementDirectionComponent) fromComponent).Value); return;
             case GameComponentsLookup.MovementListener: ReplaceMovementListener(((MovementListenerComponent) fromComponent).value); return;
@@ -54,6 +70,8 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.MovementStrategyProcess: ReplaceMovementStrategyProcess(((MovementStrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.NextFrameDestroy: isNextFrameDestroy = true; return;
             case GameComponentsLookup.Owner: ReplaceOwner(((OwnerComponent) fromComponent).Value); return;
+            case GameComponentsLookup.OwnerEntityConfigIndexKey: ReplaceOwnerEntityConfigIndexKey(((OwnerEntityConfigIndexKeyComponent) fromComponent).Value); return;
+            case GameComponentsLookup.OwnerEntityTypeIndexKey: ReplaceOwnerEntityTypeIndexKey(((OwnerEntityTypeIndexKeyComponent) fromComponent).Value); return;
             case GameComponentsLookup.Point: ReplacePoint(((PointComponent) fromComponent).Value); return;
             case GameComponentsLookup.PointListener: ReplacePointListener(((PointListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.PointPublisher: ReplacePointPublisher(((PointPublisherComponent) fromComponent).Subscribers); return;
@@ -67,21 +85,34 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.ScaleVector: ReplaceScaleVector(((ScaleVectorComponent) fromComponent).Value); return;
             case GameComponentsLookup.ScaleVectorListener: ReplaceScaleVectorListener(((ScaleVectorListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.SceneConfig: ReplaceSceneConfig(((SceneConfigComponent) fromComponent).Value); return;
+            case GameComponentsLookup.SceneLoaded: isSceneLoaded = true; return;
             case GameComponentsLookup.SceneLoadingProcess: isSceneLoadingProcess = true; return;
             case GameComponentsLookup.SceneLoadMode: ReplaceSceneLoadMode(((SceneLoadModeComponent) fromComponent).Value); return;
+            case GameComponentsLookup.SceneLoadProgress: ReplaceSceneLoadProgress(((SceneLoadProgressComponent) fromComponent).Value); return;
             case GameComponentsLookup.SecondFloatValue: ReplaceSecondFloatValue(((SecondFloatValueComponent) fromComponent).Value); return;
+            case GameComponentsLookup.SecondFloatValueListener: ReplaceSecondFloatValueListener(((SecondFloatValueListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.Services: ReplaceServices(((ServicesComponent) fromComponent).Instance); return;
             case GameComponentsLookup.SmoothRotation: isSmoothRotation = true; return;
             case GameComponentsLookup.SmoothRotationSpeed: ReplaceSmoothRotationSpeed(((SmoothRotationSpeedComponent) fromComponent).Value); return;
             case GameComponentsLookup.Sprite: ReplaceSprite(((SpriteComponent) fromComponent).Value); return;
             case GameComponentsLookup.SpriteListener: ReplaceSpriteListener(((SpriteListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.StartTime: ReplaceStartTime(((StartTimeComponent) fromComponent).Value); return;
+            case GameComponentsLookup.StartTimeListener: ReplaceStartTimeListener(((StartTimeListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.StrategyCreate: ReplaceStrategyCreate(((StrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.StrategyProcess: ReplaceStrategyProcess(((StrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.TargetEntityConfig: ReplaceTargetEntityConfig(((TargetEntityConfigComponent) fromComponent).Value); return;
             case GameComponentsLookup.TargetMainCreator: ReplaceTargetMainCreator(((TargetMainCreatorComponent) fromComponent).Value); return;
+            case GameComponentsLookup.TargetPublisher: ReplaceTargetPublisher(((TargetPublisherComponent) fromComponent).Subscribers); return;
+            case GameComponentsLookup.TargetSubscriber: 
+                var newTargetSubscriber = (TargetSubscriberComponent) fromComponent;
+                ReplaceTargetSubscriber(newTargetSubscriber.Strategy,newTargetSubscriber.Target); 
+                return;
             case GameComponentsLookup.Text: ReplaceText(((TextComponent) fromComponent).Value); return;
+            case GameComponentsLookup.TextListener: ReplaceTextListener(((TextListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.Time: ReplaceTime(((TimeComponent) fromComponent).Value); return;
+            case GameComponentsLookup.TimeListener: ReplaceTimeListener(((TimeListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.TimeLoop: isTimeLoop = true; return;
+            case GameComponentsLookup.TimeMultiplier: ReplaceTimeMultiplier(((TimeMultiplierComponent) fromComponent).Value); return;
             case GameComponentsLookup.TransformMoveVector: ReplaceTransformMoveVector(((TransformMoveVectorComponent) fromComponent).Value); return;
             case GameComponentsLookup.TransformPosition: ReplaceTransformPosition(((TransformPositionComponent) fromComponent).Value); return;
             case GameComponentsLookup.TransformPositionTo: ReplaceTransformPositionTo(((TransformPositionToComponent) fromComponent).Position); return;
@@ -90,6 +121,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.UnloadAssetsByLabel: ReplaceUnloadAssetsByLabel(((UnloadAssetsByLabelComponent) fromComponent).Labels); return;
             case GameComponentsLookup.Vector3Value: ReplaceVector3Value(((Vector3ValueComponent) fromComponent).Value); return;
             case GameComponentsLookup.Velocity: ReplaceVelocity(((VelocityComponent) fromComponent).Value); return;
+            case GameComponentsLookup.VelocityListener: ReplaceVelocityListener(((VelocityListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.VelocityMax: ReplaceVelocityMax(((VelocityMaxComponent) fromComponent).Value); return;
             case GameComponentsLookup.VelocityMin: ReplaceVelocityMin(((VelocityMinComponent) fromComponent).Value); return;
             case GameComponentsLookup.VelocityModifier: ReplaceVelocityModifier(((VelocityModifierComponent) fromComponent).Value); return;

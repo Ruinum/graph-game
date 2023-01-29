@@ -4,14 +4,14 @@
     {
         public override bool TryGet(GameEntity entity, out GameEntity targetEntity)
         {
-            //if (!entity.hasCreatorEntity)
-            //{
-            //    targetEntity = default;
-            //    if(Logging) LogErrorNotFound("CreatorEntityComponent", (nameof(entity), entity));
-            //    return false;
-            //}
+            if (!entity.hasCreatorEntity)
+            {
+                targetEntity = default;
+                if (Logging) LogErrorNotFound("CreatorEntityComponent", (nameof(entity), entity));
+                return false;
+            }
 
-            targetEntity = default; //entity.creatorEntity.Value;
+            targetEntity = entity.creatorEntity.Value;
             return true;
         }
     }

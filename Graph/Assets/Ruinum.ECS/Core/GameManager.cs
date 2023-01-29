@@ -23,11 +23,13 @@ namespace Ruinum.ECS
 
         private async void Start()
         {
+            DontDestroyOnLoad(gameObject);
+
             LogDeviceInfo();
 
             var services = new RuinumServices(new ConfigService(), 
-                new AssetService(), 
-                new EntityIndexService(), 
+                new AssetService(),
+                new EntityIndexService(Contexts.sharedInstance),
                 new LoaderService(),
                 new SceneService(),
                 new InputService(_input));

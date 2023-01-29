@@ -9,91 +9,122 @@
 public static class GameComponentsLookup {
 
     public const int Acceleration = 0;
-    public const int BeforeMovementStrategyCreate = 1;
-    public const int BeforeMovementStrategyProcess = 2;
-    public const int Camera = 3;
-    public const int CharacterController = 4;
-    public const int ColliderHit = 5;
-    public const int ConfigIndex = 6;
-    public const int ControlledByPlayer = 7;
-    public const int CreatedEntity = 8;
-    public const int CreatorEntity = 9;
-    public const int Destroyed = 10;
-    public const int DestroyedListener = 11;
-    public const int DestroyStrategyCreate = 12;
-    public const int DestroyStrategyProcess = 13;
-    public const int EntityType = 14;
-    public const int FloatModifier = 15;
-    public const int FloatValue = 16;
-    public const int GameCreatedEntity = 17;
-    public const int GameObject = 18;
-    public const int GameTarget = 19;
-    public const int Grounded = 20;
-    public const int InstantRotation = 21;
-    public const int LoadAssetsByLabel = 22;
-    public const int LoadAssetsOperationCompleted = 23;
-    public const int LoadAssetsOperation = 24;
-    public const int MainCreator = 25;
-    public const int MaxFloatValue = 26;
-    public const int MaxFloatValueListener = 27;
-    public const int Mesh = 28;
-    public const int MeshListener = 29;
-    public const int MinFloatValue = 30;
-    public const int MoveDistance = 31;
-    public const int Movement = 32;
-    public const int MovementDirection = 33;
-    public const int MovementListener = 34;
-    public const int MovementStrategyCreate = 35;
-    public const int MovementStrategyProcess = 36;
-    public const int NextFrameDestroy = 37;
-    public const int Owner = 38;
-    public const int Point = 39;
-    public const int PointListener = 40;
-    public const int PointPublisher = 41;
-    public const int PointSubscriber = 42;
-    public const int Prefab = 43;
-    public const int RootOwner = 44;
-    public const int Rotation = 45;
-    public const int ScaleVector = 46;
-    public const int ScaleVectorListener = 47;
-    public const int SceneConfig = 48;
-    public const int SceneLoadingProcess = 49;
-    public const int SceneLoadMode = 50;
-    public const int SecondFloatValue = 51;
-    public const int Services = 52;
-    public const int SmoothRotation = 53;
-    public const int SmoothRotationSpeed = 54;
-    public const int Sprite = 55;
-    public const int SpriteListener = 56;
-    public const int StartTime = 57;
-    public const int StrategyCreate = 58;
-    public const int StrategyProcess = 59;
-    public const int TargetEntityConfig = 60;
-    public const int TargetMainCreator = 61;
-    public const int Text = 62;
-    public const int Time = 63;
-    public const int TransformMoveVector = 64;
-    public const int TransformPosition = 65;
-    public const int TransformPositionTo = 66;
-    public const int TransformRotation = 67;
-    public const int TransformRotationTo = 68;
-    public const int UnloadAssetsByLabel = 69;
-    public const int Vector3Value = 70;
-    public const int Velocity = 71;
-    public const int VelocityMax = 72;
-    public const int VelocityMin = 73;
-    public const int VelocityModifier = 74;
-    public const int VelocityVector = 75;
+    public const int AnyTextListener = 1;
+    public const int AnyTextRemovedListener = 2;
+    public const int BeforeMovementStrategyCreate = 3;
+    public const int BeforeMovementStrategyProcess = 4;
+    public const int Camera = 5;
+    public const int CharacterController = 6;
+    public const int ChildTransformByConfig = 7;
+    public const int ColliderHit = 8;
+    public const int ComponentDataContainer = 9;
+    public const int ComponentDataContainerListener = 10;
+    public const int ConfigIndex = 11;
+    public const int ControlledByPlayer = 12;
+    public const int CreatedEntity = 13;
+    public const int CreatorEntity = 14;
+    public const int Destroyed = 15;
+    public const int DestroyedListener = 16;
+    public const int DestroyStrategyCreate = 17;
+    public const int DestroyStrategyProcess = 18;
+    public const int EntityType = 19;
+    public const int FloatModifier = 20;
+    public const int FloatModifierListener = 21;
+    public const int FloatValue = 22;
+    public const int FloatValueListener = 23;
+    public const int FloatValuePublisher = 24;
+    public const int FloatValueSubscriber = 25;
+    public const int GameCreatedEntity = 26;
+    public const int GameObject = 27;
+    public const int GameOwnerTransformChild = 28;
+    public const int GameTarget = 29;
+    public const int Grounded = 30;
+    public const int InputDomainGame = 31;
+    public const int InstantRotation = 32;
+    public const int LoadAssetsByLabel = 33;
+    public const int LoadAssetsOperationCompleted = 34;
+    public const int LoadAssetsOperation = 35;
+    public const int MainCreator = 36;
+    public const int MaxFloatValue = 37;
+    public const int MaxFloatValueListener = 38;
+    public const int Mesh = 39;
+    public const int MeshListener = 40;
+    public const int MinFloatValue = 41;
+    public const int MinFloatValueListener = 42;
+    public const int MoveDistance = 43;
+    public const int MoveDistanceListener = 44;
+    public const int Movement = 45;
+    public const int MovementDirection = 46;
+    public const int MovementListener = 47;
+    public const int MovementStrategyCreate = 48;
+    public const int MovementStrategyProcess = 49;
+    public const int NextFrameDestroy = 50;
+    public const int Owner = 51;
+    public const int OwnerEntityConfigIndexKey = 52;
+    public const int OwnerEntityTypeIndexKey = 53;
+    public const int Point = 54;
+    public const int PointListener = 55;
+    public const int PointPublisher = 56;
+    public const int PointSubscriber = 57;
+    public const int Prefab = 58;
+    public const int RootOwner = 59;
+    public const int Rotation = 60;
+    public const int ScaleVector = 61;
+    public const int ScaleVectorListener = 62;
+    public const int SceneConfig = 63;
+    public const int SceneLoaded = 64;
+    public const int SceneLoadingProcess = 65;
+    public const int SceneLoadMode = 66;
+    public const int SceneLoadProgress = 67;
+    public const int SecondFloatValue = 68;
+    public const int SecondFloatValueListener = 69;
+    public const int Services = 70;
+    public const int SmoothRotation = 71;
+    public const int SmoothRotationSpeed = 72;
+    public const int Sprite = 73;
+    public const int SpriteListener = 74;
+    public const int StartTime = 75;
+    public const int StartTimeListener = 76;
+    public const int StrategyCreate = 77;
+    public const int StrategyProcess = 78;
+    public const int TargetEntityConfig = 79;
+    public const int TargetMainCreator = 80;
+    public const int TargetPublisher = 81;
+    public const int TargetSubscriber = 82;
+    public const int Text = 83;
+    public const int TextListener = 84;
+    public const int Time = 85;
+    public const int TimeListener = 86;
+    public const int TimeLoop = 87;
+    public const int TimeMultiplier = 88;
+    public const int TransformMoveVector = 89;
+    public const int TransformPosition = 90;
+    public const int TransformPositionTo = 91;
+    public const int TransformRotation = 92;
+    public const int TransformRotationTo = 93;
+    public const int UnloadAssetsByLabel = 94;
+    public const int Vector3Value = 95;
+    public const int Velocity = 96;
+    public const int VelocityListener = 97;
+    public const int VelocityMax = 98;
+    public const int VelocityMin = 99;
+    public const int VelocityModifier = 100;
+    public const int VelocityVector = 101;
 
-    public const int TotalComponents = 76;
+    public const int TotalComponents = 102;
 
     public static readonly string[] componentNames = {
         "Acceleration",
+        "AnyTextListener",
+        "AnyTextRemovedListener",
         "BeforeMovementStrategyCreate",
         "BeforeMovementStrategyProcess",
         "Camera",
         "CharacterController",
+        "ChildTransformByConfig",
         "ColliderHit",
+        "ComponentDataContainer",
+        "ComponentDataContainerListener",
         "ConfigIndex",
         "ControlledByPlayer",
         "CreatedEntity",
@@ -104,11 +135,17 @@ public static class GameComponentsLookup {
         "DestroyStrategyProcess",
         "EntityType",
         "FloatModifier",
+        "FloatModifierListener",
         "FloatValue",
+        "FloatValueListener",
+        "FloatValuePublisher",
+        "FloatValueSubscriber",
         "GameCreatedEntity",
         "GameObject",
+        "GameOwnerTransformChild",
         "GameTarget",
         "Grounded",
+        "InputDomainGame",
         "InstantRotation",
         "LoadAssetsByLabel",
         "LoadAssetsOperationCompleted",
@@ -119,7 +156,9 @@ public static class GameComponentsLookup {
         "Mesh",
         "MeshListener",
         "MinFloatValue",
+        "MinFloatValueListener",
         "MoveDistance",
+        "MoveDistanceListener",
         "Movement",
         "MovementDirection",
         "MovementListener",
@@ -127,6 +166,8 @@ public static class GameComponentsLookup {
         "MovementStrategyProcess",
         "NextFrameDestroy",
         "Owner",
+        "OwnerEntityConfigIndexKey",
+        "OwnerEntityTypeIndexKey",
         "Point",
         "PointListener",
         "PointPublisher",
@@ -137,21 +178,31 @@ public static class GameComponentsLookup {
         "ScaleVector",
         "ScaleVectorListener",
         "SceneConfig",
+        "SceneLoaded",
         "SceneLoadingProcess",
         "SceneLoadMode",
+        "SceneLoadProgress",
         "SecondFloatValue",
+        "SecondFloatValueListener",
         "Services",
         "SmoothRotation",
         "SmoothRotationSpeed",
         "Sprite",
         "SpriteListener",
         "StartTime",
+        "StartTimeListener",
         "StrategyCreate",
         "StrategyProcess",
         "TargetEntityConfig",
         "TargetMainCreator",
+        "TargetPublisher",
+        "TargetSubscriber",
         "Text",
+        "TextListener",
         "Time",
+        "TimeListener",
+        "TimeLoop",
+        "TimeMultiplier",
         "TransformMoveVector",
         "TransformPosition",
         "TransformPositionTo",
@@ -160,6 +211,7 @@ public static class GameComponentsLookup {
         "UnloadAssetsByLabel",
         "Vector3Value",
         "Velocity",
+        "VelocityListener",
         "VelocityMax",
         "VelocityMin",
         "VelocityModifier",
@@ -168,11 +220,16 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AccelerationComponent),
+        typeof(AnyTextListenerComponent),
+        typeof(AnyTextRemovedListenerComponent),
         typeof(BeforeMovementStrategyCreateComponent),
         typeof(BeforeMovementStrategyProcessComponent),
         typeof(CameraComponent),
         typeof(CharacterControllerComponent),
+        typeof(ChildTransformByConfigComponent),
         typeof(ColliderHitComponent),
+        typeof(ComponentDataContainerComponent),
+        typeof(ComponentDataContainerListenerComponent),
         typeof(ConfigIndexComponent),
         typeof(ControlledByPlayerComponent),
         typeof(CreatedEntityComponent),
@@ -183,11 +240,17 @@ public static class GameComponentsLookup {
         typeof(DestroyStrategyProcessComponent),
         typeof(EntityTypeComponent),
         typeof(FloatModifierComponent),
+        typeof(FloatModifierListenerComponent),
         typeof(FloatValueComponent),
+        typeof(FloatValueListenerComponent),
+        typeof(FloatValuePublisherComponent),
+        typeof(FloatValueSubscriberComponent),
         typeof(GameCreatedEntityComponent),
         typeof(GameObjectComponent),
+        typeof(GameOwnerTransformChildComponent),
         typeof(GameTargetComponent),
         typeof(GroundedComponent),
+        typeof(InputDomainGameComponent),
         typeof(InstantRotationComponent),
         typeof(LoadAssetsByLabelComponent),
         typeof(LoadAssetsOperationCompletedComponent),
@@ -198,7 +261,9 @@ public static class GameComponentsLookup {
         typeof(MeshComponent),
         typeof(MeshListenerComponent),
         typeof(MinFloatValueComponent),
+        typeof(MinFloatValueListenerComponent),
         typeof(MoveDistanceComponent),
+        typeof(MoveDistanceListenerComponent),
         typeof(MovementComponent),
         typeof(MovementDirectionComponent),
         typeof(MovementListenerComponent),
@@ -206,6 +271,8 @@ public static class GameComponentsLookup {
         typeof(MovementStrategyProcessComponent),
         typeof(NextFrameDestroyComponent),
         typeof(OwnerComponent),
+        typeof(OwnerEntityConfigIndexKeyComponent),
+        typeof(OwnerEntityTypeIndexKeyComponent),
         typeof(PointComponent),
         typeof(PointListenerComponent),
         typeof(PointPublisherComponent),
@@ -216,21 +283,31 @@ public static class GameComponentsLookup {
         typeof(ScaleVectorComponent),
         typeof(ScaleVectorListenerComponent),
         typeof(SceneConfigComponent),
+        typeof(SceneLoadedComponent),
         typeof(SceneLoadingProcessComponent),
         typeof(SceneLoadModeComponent),
+        typeof(SceneLoadProgressComponent),
         typeof(SecondFloatValueComponent),
+        typeof(SecondFloatValueListenerComponent),
         typeof(ServicesComponent),
         typeof(SmoothRotationComponent),
         typeof(SmoothRotationSpeedComponent),
         typeof(SpriteComponent),
         typeof(SpriteListenerComponent),
         typeof(StartTimeComponent),
+        typeof(StartTimeListenerComponent),
         typeof(StrategyCreateComponent),
         typeof(StrategyProcessComponent),
         typeof(TargetEntityConfigComponent),
         typeof(TargetMainCreatorComponent),
+        typeof(TargetPublisherComponent),
+        typeof(TargetSubscriberComponent),
         typeof(TextComponent),
+        typeof(TextListenerComponent),
         typeof(TimeComponent),
+        typeof(TimeListenerComponent),
+        typeof(TimeLoopComponent),
+        typeof(TimeMultiplierComponent),
         typeof(TransformMoveVectorComponent),
         typeof(TransformPositionComponent),
         typeof(TransformPositionToComponent),
@@ -239,6 +316,7 @@ public static class GameComponentsLookup {
         typeof(UnloadAssetsByLabelComponent),
         typeof(Vector3ValueComponent),
         typeof(VelocityComponent),
+        typeof(VelocityListenerComponent),
         typeof(VelocityMaxComponent),
         typeof(VelocityMinComponent),
         typeof(VelocityModifierComponent),

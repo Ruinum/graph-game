@@ -15,7 +15,7 @@ namespace Ruinum
         public static void Initialize(Contexts contexts, IGameServices services)
         {
             _contexts = contexts;
-            _services = services;
+            _services = services;            
             foreach (var m in _initializableConfigs)
             {
                 m.Initialize(contexts, services);
