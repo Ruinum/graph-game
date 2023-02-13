@@ -56,6 +56,11 @@ MonoBehaviour:
     m_Address: InputDomainConfig
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 69a1388edc64d7a41897326b274b0291
+    m_Address: NodeTypeUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:
