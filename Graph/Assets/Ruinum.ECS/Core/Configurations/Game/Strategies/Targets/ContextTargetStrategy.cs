@@ -17,7 +17,7 @@ namespace Ruinum.ECS.Configurations.Game.Strategies.Targets
                 if(Logging) LogErrorNotFound(nameof(config), (nameof(entity), entity));
                 return false;
             }
-            var entities = Contexts.game.GetEntitiesWithConfigIndex((uint)config.ConfigIndex);
+            var entities = Contexts.game.GetEntitiesWithConfigIndex(config.ConfigIndex);
             if (entities.Count == 0)
             {
                 targetEntity = default;

@@ -23,10 +23,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.ColliderHit: ReplaceColliderHit(((ColliderHitComponent) fromComponent).Value); return;
             case GameComponentsLookup.ComponentDataContainer: ReplaceComponentDataContainer(((ComponentDataContainerComponent) fromComponent).Value); return;
             case GameComponentsLookup.ComponentDataContainerListener: ReplaceComponentDataContainerListener(((ComponentDataContainerListenerComponent) fromComponent).value); return;
-            case GameComponentsLookup.ConfigIndex: 
-                var newConfigIndex = (ConfigIndexComponent) fromComponent;
-                ReplaceConfigIndex(newConfigIndex.Value,newConfigIndex.EntityIdentity); 
-                return;
+            case GameComponentsLookup.ConfigIndex: ReplaceConfigIndex(((ConfigIndexComponent) fromComponent).Value); return;
             case GameComponentsLookup.ControlledByPlayer: isControlledByPlayer = true; return;
             case GameComponentsLookup.CreatedEntity: ReplaceCreatedEntity(((CreatedEntityComponent) fromComponent).Value); return;
             case GameComponentsLookup.CreatorEntity: ReplaceCreatorEntity(((CreatorEntityComponent) fromComponent).Value); return;
