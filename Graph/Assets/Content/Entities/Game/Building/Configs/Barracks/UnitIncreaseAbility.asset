@@ -15,10 +15,7 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 7710767cd93474e519c501d7ca2e35ee, type: 2}
-    - {fileID: 11400000, guid: cc5b24d10887a4e529d2f91cd5be882f, type: 2}
-    - {fileID: 11400000, guid: 44d75f6ae88f3724484b4fcdf527ee4b, type: 2}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -116,8 +113,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -178,8 +175,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -211,8 +208,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -288,8 +285,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 2
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -348,8 +345,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 2
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -419,8 +416,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -456,8 +453,8 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Config
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
