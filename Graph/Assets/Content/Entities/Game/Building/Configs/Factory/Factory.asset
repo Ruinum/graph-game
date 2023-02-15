@@ -10,11 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-<<<<<<<< HEAD:Graph/Assets/Content/Entities/Game/Types/Configs/BuildingType.asset
-  m_Name: BuildingType
-========
-  m_Name: MoneyAmount
->>>>>>>> buildings:Graph/Assets/Content/Entities/Game/GameResources/Сonfigs/MoneyAmount.asset
+  m_Name: Factory
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -37,4 +33,8 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Nested: []
+  Nested:
+  - {fileID: 11400000, guid: ef5641a7dfec446e99ff6f94d3f2b19c, type: 2}
+  - {fileID: 11400000, guid: 712ae2af1440144409157d7dc5dfad4f, type: 2}
+  - {fileID: 11400000, guid: 5dd97fafb810d4a67bef95014b76000b, type: 2}
+  - {fileID: 11400000, guid: b01f4ea208f924f65a413cc6d20fb628, type: 2}
