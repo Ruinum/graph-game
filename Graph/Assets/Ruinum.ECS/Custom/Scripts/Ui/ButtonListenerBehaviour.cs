@@ -8,14 +8,15 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
     public class ButtonListenerBehaviour : GameEntityComponentBehaviour
     {
         [SerializeField] private GameEntityConfig _config;
-        private Button _button;
         
-        protected override void OnSetEntity(GameEntity entity)
+        private void Awake()
         {
-            Debug.Log(entity);
-            _button = GetComponent<Button>();
-            _button.onClick.AddListener(() => { Debug.Log("CreateConfig"); _config.Create(entity); });
-            Debug.Log(_button);
-        }       
+            GetComponent<Button>().onClick.AddListener(OnClick);                    
+        }
+
+        public void OnClick()
+        {
+            _config.Create(Entity);
+        }
     }
 }

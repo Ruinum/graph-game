@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Ruinum.ECS.Scripts.Entities.Components.Game
@@ -12,7 +10,6 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
 
         protected override void OnSetEntity(GameEntity entity)
         {
-            Debug.Log(123);
             for (int i = _behaviours.Length - 1; i >= 0; i--)
             {
                 _behaviours[i].SetEntity(Entity);
