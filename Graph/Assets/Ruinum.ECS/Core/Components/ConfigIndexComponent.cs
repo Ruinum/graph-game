@@ -5,6 +5,5 @@ using Entitas.CodeGeneration.Attributes;
 public sealed class ConfigIndexComponent : IComponent
 {
     [EntityIndex]
-    public uint Value;
-    public int EntityIdentity;
+    public int Value;
 }

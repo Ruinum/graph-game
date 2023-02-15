@@ -11,19 +11,17 @@ public partial class GameEntity {
     public ConfigIndexComponent configIndex { get { return (ConfigIndexComponent)GetComponent(GameComponentsLookup.ConfigIndex); } }
     public bool hasConfigIndex { get { return HasComponent(GameComponentsLookup.ConfigIndex); } }
 
-    public void AddConfigIndex(uint newValue, int newEntityIdentity) {
+    public void AddConfigIndex(int newValue) {
         var index = GameComponentsLookup.ConfigIndex;
         var component = (ConfigIndexComponent)CreateComponent(index, typeof(ConfigIndexComponent));
         component.Value = newValue;
-        component.EntityIdentity = newEntityIdentity;
         AddComponent(index, component);
     }
 
-    public void ReplaceConfigIndex(uint newValue, int newEntityIdentity) {
+    public void ReplaceConfigIndex(int newValue) {
         var index = GameComponentsLookup.ConfigIndex;
         var component = (ConfigIndexComponent)CreateComponent(index, typeof(ConfigIndexComponent));
         component.Value = newValue;
-        component.EntityIdentity = newEntityIdentity;
         ReplaceComponent(index, component);
     }
 

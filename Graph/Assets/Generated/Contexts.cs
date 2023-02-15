@@ -75,7 +75,7 @@ public partial class Contexts {
             game.GetGroup(GameMatcher.ColliderHit),
             (e, c) => ((ColliderHitComponent)c).Value));
 
-        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, uint>(
+        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, int>(
             ConfigIndex,
             game.GetGroup(GameMatcher.ConfigIndex),
             (e, c) => ((ConfigIndexComponent)c).Value));
@@ -123,8 +123,8 @@ public static class ContextsExtensions {
         return ((Entitas.EntityIndex<GameEntity, GameEntity>)context.GetEntityIndex(Contexts.ColliderHit)).GetEntities(Value);
     }
 
-    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithConfigIndex(this GameContext context, uint Value) {
-        return ((Entitas.EntityIndex<GameEntity, uint>)context.GetEntityIndex(Contexts.ConfigIndex)).GetEntities(Value);
+    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithConfigIndex(this GameContext context, int Value) {
+        return ((Entitas.EntityIndex<GameEntity, int>)context.GetEntityIndex(Contexts.ConfigIndex)).GetEntities(Value);
     }
 
     public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithCreatedEntity(this GameContext context, GameEntity Value) {

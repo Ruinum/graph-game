@@ -86,7 +86,7 @@ namespace Ruinum.ECS.Configurations
         {
             ValidateConfigIndex();
             var configIndexComponent = entity.CreateComponent<ConfigIndexComponent>(_configIndexComponentIndex);
-            configIndexComponent.EntityIdentity = ConfigIndex;
+            configIndexComponent.Value = ConfigIndex;
             entity.AddComponent(_configIndexComponentIndex, configIndexComponent);
             entity.SetConfigIndex(ConfigIndex);
         }

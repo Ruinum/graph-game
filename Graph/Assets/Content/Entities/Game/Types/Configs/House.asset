@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: Node
+  m_Name: House
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -34,5 +34,4 @@ MonoBehaviour:
       Entry: 8
       Data: 
   Nested:
-  - {fileID: 11400000, guid: 8de72898ad94f4c4492d90fa5e286004, type: 2}
-  - {fileID: 11400000, guid: e41eeef082bc78b47888352de0ee6d46, type: 2}
+  - {fileID: 11400000, guid: 82715de0abadec54d82b09860020d188, type: 2}
