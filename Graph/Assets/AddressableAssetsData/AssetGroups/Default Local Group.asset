@@ -56,6 +56,11 @@ MonoBehaviour:
     m_Address: InputDomainConfig
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b2884042d984a459097a9cec79b10cf5
+    m_Address: MoneyUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:
