@@ -33,16 +33,6 @@ MonoBehaviour:
     m_Address: ComponentDataContainerConfigIndex
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 10ce7b3c6033f194580b6203be80c84d
-    m_Address: Building
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-  - m_GUID: 781b6bdef7e7b9a4aa47916e07dbd582
-    m_Address: PeopleAmount
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
   - m_GUID: a51c3c99b66350b4e8110b24c0f8a5ad
     m_Address: WorldCanvas
     m_ReadOnly: 0
@@ -56,7 +46,7 @@ MonoBehaviour:
     m_Address: InputDomainConfig
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 69a1388edc64d7a41897326b274b0291
+  - m_GUID: 53e5c750c96b74d988ba87933dd3a2bb
     m_Address: NodeTypeUI
     m_ReadOnly: 0
     m_SerializedLabels:

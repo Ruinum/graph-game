@@ -10,18 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-<<<<<<<< HEAD:Graph/Assets/Content/Entities/Game/Node/Confings/ClickListener.asset
   m_Name: ClickListener
-========
-  m_Name: LocalUnitAmountUI
->>>>>>>> buildings:Graph/Assets/Content/Entities/Game/Building/Configs/Barracks/LocalUnitAmountUI.asset
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 0d0628d756cb71b4c9ff18f31db9fbbb, type: 2}
-    - {fileID: 11400000, guid: 130765f6a2a62b847b79c56f1b2bcc1f, type: 2}
+    - {fileID: 11400000, guid: c33b269be478b484d9066604cf5c00c9, type: 2}
+    - {fileID: 11400000, guid: 6bbb8c6f362c04ff492d545e123c0fd0, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []

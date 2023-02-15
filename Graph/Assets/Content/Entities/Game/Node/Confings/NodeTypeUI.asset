@@ -16,7 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: e41eeef082bc78b47888352de0ee6d46, type: 2}
+    - {fileID: 11400000, guid: 5dd97fafb810d4a67bef95014b76000b, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -46,7 +46,7 @@ MonoBehaviour:
         Assembly-CSharp]], Assembly-CSharp
     - Name: m_AssetGUID
       Entry: 1
-      Data: 69a1388edc64d7a41897326b274b0291
+      Data: 53e5c750c96b74d988ba87933dd3a2bb
     - Name: m_SubObjectName
       Entry: 1
       Data: 

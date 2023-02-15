@@ -1,8 +1,5 @@
 using Ruinum.ECS.Configurations.Game;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Ruinum.ECS.Scripts.Entities.Components.Game
@@ -12,11 +9,13 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
     {
         [SerializeField] private GameEntityConfig _config;
         private Button _button;
+        
         protected override void OnSetEntity(GameEntity entity)
         {
             Debug.Log(entity);
             _button = GetComponent<Button>();
-            _button.onClick.AddListener(() => _config.Create(entity)); 
+            _button.onClick.AddListener(() => { Debug.Log("CreateConfig"); _config.Create(entity); });
+            Debug.Log(_button);
         }       
     }
 }

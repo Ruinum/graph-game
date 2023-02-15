@@ -23,7 +23,8 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Condition
       Entry: 7
-      Data: 0|Ruinum.ECS.Core.Conditions.FloatValueEqualCondition, Assembly-CSharp
+      Data: 0|BeastHour.Configurations.Conditions.Entities.Float.FloatEqualOtherCondition,
+        Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
