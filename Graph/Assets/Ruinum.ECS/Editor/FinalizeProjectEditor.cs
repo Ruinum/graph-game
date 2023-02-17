@@ -13,7 +13,7 @@ namespace Ruinum.Editor
 {
     public static class FinalizeProjectEditor
     {
-        [MenuItem(EditorConstants.RootMenuName + "/Finalize", false, EditorConstants.MenuLowPriority)]
+        [MenuItem(EditorConstants.RootMenuName + "/Finalize %e", false, EditorConstants.MenuLowPriority)]
         public static void FinalizeProject()
         {
             TMP_EditorCoroutine.StartCoroutine(Run());
