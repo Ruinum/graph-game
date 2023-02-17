@@ -51,13 +51,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
-  - m_GUID: 762eb51f9ae50da4683aec10d3c6c8ee
-    m_Address: RootCanvas
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
-  - m_GUID: 6b7048f23e6d5449e8a167bce34744c7
-    m_Address: MoneyUI
+  - m_GUID: 5d6008229c963ff41a8ab038502746de
+    m_Address: DemolishButtonUI
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload

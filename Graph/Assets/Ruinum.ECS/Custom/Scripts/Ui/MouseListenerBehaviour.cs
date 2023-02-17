@@ -20,9 +20,9 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
             _onEnterEntity = _onEnterConfig.Create(Entity);
         }
 
-        private void OnMouseExit()
+        private void OnMouseExit() 
         {
-            _onEnterEntity.Destroy();
+            if (_onEnterEntity != null) _onEnterEntity.Destroy();   
         }
     }
 }

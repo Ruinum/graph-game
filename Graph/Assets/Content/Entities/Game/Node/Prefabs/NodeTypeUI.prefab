@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3769232688231300721}
   - component: {fileID: 2284418758405570670}
   - component: {fileID: 2993446413750258257}
-  - component: {fileID: 4712187164958766768}
   - component: {fileID: 6750076312787639682}
-  - component: {fileID: 8582273274311165047}
+  - component: {fileID: 551700439807202575}
+  - component: {fileID: 4224678547032653819}
   m_Layer: 5
   m_Name: House
   m_TagString: Untagged
@@ -80,50 +80,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4712187164958766768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972333686673174689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2993446413750258257}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &6750076312787639682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d366fb471fc7394fa1c6ec63e0a434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8582273274311165047
+--- !u!114 &551700439807202575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 972333686673174689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84f507a843b5f94da2031e6a70d1cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: b5682e59a7153ae449c77ac5a93aa49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -157,7 +113,24 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _config: {fileID: 11400000, guid: eaaeaebc8fe04464082207d0b2fac7a8, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: eaaeaebc8fe04464082207d0b2fac7a8, type: 2}
+  _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
+--- !u!58 &4224678547032653819
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972333686673174689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!1 &1179651852248597502
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,9 +762,9 @@ GameObject:
   - component: {fileID: 6799173855301782937}
   - component: {fileID: 3962170119925120824}
   - component: {fileID: 5454006295778789182}
-  - component: {fileID: 265563931727049679}
   - component: {fileID: 7561135622039960733}
-  - component: {fileID: 6498290428076482934}
+  - component: {fileID: 3491880732968529131}
+  - component: {fileID: 8324083281869323020}
   m_Layer: 5
   m_Name: Barracs
   m_TagString: Untagged
@@ -858,50 +831,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &265563931727049679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6106093661258541903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 5454006295778789182}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7561135622039960733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d366fb471fc7394fa1c6ec63e0a434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6498290428076482934
+--- !u!114 &3491880732968529131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -923,7 +852,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6106093661258541903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84f507a843b5f94da2031e6a70d1cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: b5682e59a7153ae449c77ac5a93aa49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -935,7 +864,24 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _config: {fileID: 11400000, guid: bbd09a1c3a613c746a2ad452dc2d09da, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: bbd09a1c3a613c746a2ad452dc2d09da, type: 2}
+  _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
+--- !u!58 &8324083281869323020
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106093661258541903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!1 &6432983685725786820
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,9 +893,9 @@ GameObject:
   - component: {fileID: 9190985863341123390}
   - component: {fileID: 962263459586117977}
   - component: {fileID: 3525034091769103008}
-  - component: {fileID: 2712572154989134132}
   - component: {fileID: 2792234621028408290}
-  - component: {fileID: 658845383521007507}
+  - component: {fileID: 5178013267769962207}
+  - component: {fileID: 2827063376760378385}
   m_Layer: 5
   m_Name: Theater
   m_TagString: Untagged
@@ -1016,50 +962,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2712572154989134132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6432983685725786820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 3525034091769103008}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &2792234621028408290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d366fb471fc7394fa1c6ec63e0a434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &658845383521007507
+--- !u!114 &5178013267769962207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1081,7 +983,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6432983685725786820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84f507a843b5f94da2031e6a70d1cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: b5682e59a7153ae449c77ac5a93aa49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -1093,7 +995,24 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _config: {fileID: 11400000, guid: 58c2bf5f1da2943bd93e507616a015fd, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: 58c2bf5f1da2943bd93e507616a015fd, type: 2}
+  _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
+--- !u!58 &2827063376760378385
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6432983685725786820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!1 &6982059378650973579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,9 +1024,9 @@ GameObject:
   - component: {fileID: 8140504078702627102}
   - component: {fileID: 364773639474623430}
   - component: {fileID: 8325476046988068748}
-  - component: {fileID: 4951502791460720478}
   - component: {fileID: 6824079849065529098}
-  - component: {fileID: 1703462735983401106}
+  - component: {fileID: 2942855296894178543}
+  - component: {fileID: 4239267905618326410}
   m_Layer: 5
   m_Name: Factory
   m_TagString: Untagged
@@ -1174,50 +1093,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4951502791460720478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6982059378650973579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 8325476046988068748}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &6824079849065529098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,7 +1105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d366fb471fc7394fa1c6ec63e0a434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1703462735983401106
+--- !u!114 &2942855296894178543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1239,7 +1114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6982059378650973579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c84f507a843b5f94da2031e6a70d1cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: b5682e59a7153ae449c77ac5a93aa49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -1251,4 +1126,21 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _config: {fileID: 11400000, guid: 2bded461db47a43428a33cfbd837b34d, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: 2bded461db47a43428a33cfbd837b34d, type: 2}
+  _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
+--- !u!58 &4239267905618326410
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982059378650973579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.7

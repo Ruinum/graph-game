@@ -2,19 +2,19 @@
 
 namespace Ruinum.ECS.Scripts.UI
 {
-    public sealed class RootCanvasBehaviour : GameEntityComponentBehaviour //, IAnyRootCanvasChildListener
+    public sealed class RootCanvasBehaviour : GameEntityComponentBehaviour, IAnyRootCanvasChildListener
     {
         private GameEntity _listenerEntity;
 
         protected override void OnSetEntity(GameEntity entity)
         {
             _listenerEntity = Contexts.sharedInstance.game.CreateEntity();
-            //_listenerEntity.AddAnyRootCanvasChildListener(this);
+            _listenerEntity.AddAnyRootCanvasChildListener(this);
         }
 
         protected override void OnEntityDestroyed()
         {
-            //_listenerEntity.RemoveAnyRootCanvasChildListener(this);
+            _listenerEntity.RemoveAnyRootCanvasChildListener(this);
             _listenerEntity.isDestroyed = true;
         }
 

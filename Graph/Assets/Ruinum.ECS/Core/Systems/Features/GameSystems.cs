@@ -1,4 +1,5 @@
 ﻿using Ruinum.ECS.Services.Interfaces;
+using Ruinum.ECS.Systems.Game;
 using Ruinum.ECS.Systems.Game.Strategies;
 using Ruinum.ECS.Systems.Game.Subscribers;
 using Ruinum.ECS.Systems.States;
@@ -9,6 +10,7 @@ namespace Ruinum.ECS.Systems.Features
     {
         public GameSystems(Contexts contexts, IGameServices services)
         {
+            Add(new RootCanvasInitializeSystem());
             Add(new EntityStrategySystem(contexts.game));
 
             Add(new TargetPublisherSubscriberSystem(contexts.game));
