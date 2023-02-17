@@ -18,6 +18,7 @@ public sealed class GameEventSystems : Feature {
         Add(new MoveDistanceEventSystem(contexts)); // priority: 0
         Add(new MovementEventSystem(contexts)); // priority: 0
         Add(new PointEventSystem(contexts)); // priority: 0
+        Add(new AnyRootCanvasChildEventSystem(contexts)); // priority: 0
         Add(new ScaleVectorEventSystem(contexts)); // priority: 0
         Add(new SecondFloatValueEventSystem(contexts)); // priority: 0
         Add(new SpriteEventSystem(contexts)); // priority: 0
