@@ -9,112 +9,115 @@
 public static class GameComponentsLookup {
 
     public const int Acceleration = 0;
-    public const int AnyTextListener = 1;
-    public const int AnyTextRemovedListener = 2;
-    public const int BeforeMovementStrategyCreate = 3;
-    public const int BeforeMovementStrategyProcess = 4;
-    public const int Camera = 5;
-    public const int CharacterController = 6;
-    public const int ChildTransformByConfig = 7;
-    public const int ColliderHit = 8;
-    public const int ComponentDataContainer = 9;
-    public const int ComponentDataContainerListener = 10;
-    public const int ConfigIndex = 11;
-    public const int ControlledByPlayer = 12;
-    public const int CreatedEntity = 13;
-    public const int CreatorEntity = 14;
-    public const int Destroyed = 15;
-    public const int DestroyedListener = 16;
-    public const int DestroyStrategyCreate = 17;
-    public const int DestroyStrategyProcess = 18;
-    public const int EntityType = 19;
-    public const int FloatModifier = 20;
-    public const int FloatModifierListener = 21;
-    public const int FloatValue = 22;
-    public const int FloatValueListener = 23;
-    public const int FloatValuePublisher = 24;
-    public const int FloatValueSubscriber = 25;
-    public const int GameCreatedEntity = 26;
-    public const int GameObject = 27;
-    public const int GameOwnerTransformChild = 28;
-    public const int GameTarget = 29;
-    public const int Grounded = 30;
-    public const int InputDomainGame = 31;
-    public const int InstantRotation = 32;
-    public const int LoadAssetsByLabel = 33;
-    public const int LoadAssetsOperationCompleted = 34;
-    public const int LoadAssetsOperation = 35;
-    public const int MainCreator = 36;
-    public const int MaxFloatValue = 37;
-    public const int MaxFloatValueListener = 38;
-    public const int Mesh = 39;
-    public const int MeshListener = 40;
-    public const int MinFloatValue = 41;
-    public const int MinFloatValueListener = 42;
-    public const int MoveDistance = 43;
-    public const int MoveDistanceListener = 44;
-    public const int Movement = 45;
-    public const int MovementDirection = 46;
-    public const int MovementListener = 47;
-    public const int MovementStrategyCreate = 48;
-    public const int MovementStrategyProcess = 49;
-    public const int NextFrameDestroy = 50;
-    public const int Owner = 51;
-    public const int OwnerEntityConfigIndexKey = 52;
-    public const int OwnerEntityTypeIndexKey = 53;
-    public const int Point = 54;
-    public const int PointListener = 55;
-    public const int PointPublisher = 56;
-    public const int PointSubscriber = 57;
-    public const int Prefab = 58;
-    public const int RootOwner = 59;
-    public const int Rotation = 60;
-    public const int ScaleVector = 61;
-    public const int ScaleVectorListener = 62;
-    public const int SceneConfig = 63;
-    public const int SceneLoaded = 64;
-    public const int SceneLoadingProcess = 65;
-    public const int SceneLoadMode = 66;
-    public const int SceneLoadProgress = 67;
-    public const int SecondFloatValue = 68;
-    public const int SecondFloatValueListener = 69;
-    public const int Services = 70;
-    public const int SmoothRotation = 71;
-    public const int SmoothRotationSpeed = 72;
-    public const int Sprite = 73;
-    public const int SpriteListener = 74;
-    public const int StartTime = 75;
-    public const int StartTimeListener = 76;
-    public const int StrategyCreate = 77;
-    public const int StrategyProcess = 78;
-    public const int TargetEntityConfig = 79;
-    public const int TargetMainCreator = 80;
-    public const int TargetPublisher = 81;
-    public const int TargetSubscriber = 82;
-    public const int Text = 83;
-    public const int TextListener = 84;
-    public const int Time = 85;
-    public const int TimeListener = 86;
-    public const int TimeLoop = 87;
-    public const int TimeMultiplier = 88;
-    public const int TransformMoveVector = 89;
-    public const int TransformPosition = 90;
-    public const int TransformPositionTo = 91;
-    public const int TransformRotation = 92;
-    public const int TransformRotationTo = 93;
-    public const int UnloadAssetsByLabel = 94;
-    public const int Vector3Value = 95;
-    public const int Velocity = 96;
-    public const int VelocityListener = 97;
-    public const int VelocityMax = 98;
-    public const int VelocityMin = 99;
-    public const int VelocityModifier = 100;
-    public const int VelocityVector = 101;
+    public const int AnyRootCanvasChildListener = 1;
+    public const int AnyTextListener = 2;
+    public const int AnyTextRemovedListener = 3;
+    public const int BeforeMovementStrategyCreate = 4;
+    public const int BeforeMovementStrategyProcess = 5;
+    public const int Camera = 6;
+    public const int CharacterController = 7;
+    public const int ChildTransformByConfig = 8;
+    public const int ColliderHit = 9;
+    public const int ComponentDataContainer = 10;
+    public const int ComponentDataContainerListener = 11;
+    public const int ConfigIndex = 12;
+    public const int ControlledByPlayer = 13;
+    public const int CreatedEntity = 14;
+    public const int CreatorEntity = 15;
+    public const int Destroyed = 16;
+    public const int DestroyedListener = 17;
+    public const int DestroyStrategyCreate = 18;
+    public const int DestroyStrategyProcess = 19;
+    public const int EntityType = 20;
+    public const int FloatModifier = 21;
+    public const int FloatModifierListener = 22;
+    public const int FloatValue = 23;
+    public const int FloatValueListener = 24;
+    public const int FloatValuePublisher = 25;
+    public const int FloatValueSubscriber = 26;
+    public const int GameCreatedEntity = 27;
+    public const int GameObject = 28;
+    public const int GameOwnerTransformChild = 29;
+    public const int GameTarget = 30;
+    public const int Grounded = 31;
+    public const int InputDomainGame = 32;
+    public const int InstantRotation = 33;
+    public const int LoadAssetsByLabel = 34;
+    public const int LoadAssetsOperationCompleted = 35;
+    public const int LoadAssetsOperation = 36;
+    public const int MainCreator = 37;
+    public const int MaxFloatValue = 38;
+    public const int MaxFloatValueListener = 39;
+    public const int Mesh = 40;
+    public const int MeshListener = 41;
+    public const int MinFloatValue = 42;
+    public const int MinFloatValueListener = 43;
+    public const int MoveDistance = 44;
+    public const int MoveDistanceListener = 45;
+    public const int Movement = 46;
+    public const int MovementDirection = 47;
+    public const int MovementListener = 48;
+    public const int MovementStrategyCreate = 49;
+    public const int MovementStrategyProcess = 50;
+    public const int NextFrameDestroy = 51;
+    public const int Owner = 52;
+    public const int OwnerEntityConfigIndexKey = 53;
+    public const int OwnerEntityTypeIndexKey = 54;
+    public const int Point = 55;
+    public const int PointListener = 56;
+    public const int PointPublisher = 57;
+    public const int PointSubscriber = 58;
+    public const int Prefab = 59;
+    public const int RootCanvasChild = 60;
+    public const int RootOwner = 61;
+    public const int Rotation = 62;
+    public const int ScaleVector = 63;
+    public const int ScaleVectorListener = 64;
+    public const int SceneConfig = 65;
+    public const int SceneLoaded = 66;
+    public const int SceneLoadingProcess = 67;
+    public const int SceneLoadMode = 68;
+    public const int SceneLoadProgress = 69;
+    public const int SecondFloatValue = 70;
+    public const int SecondFloatValueListener = 71;
+    public const int Services = 72;
+    public const int SmoothRotation = 73;
+    public const int SmoothRotationSpeed = 74;
+    public const int Sprite = 75;
+    public const int SpriteListener = 76;
+    public const int StartTime = 77;
+    public const int StartTimeListener = 78;
+    public const int StrategyCreate = 79;
+    public const int StrategyProcess = 80;
+    public const int TargetEntityConfig = 81;
+    public const int TargetMainCreator = 82;
+    public const int TargetPublisher = 83;
+    public const int TargetSubscriber = 84;
+    public const int Text = 85;
+    public const int TextListener = 86;
+    public const int Time = 87;
+    public const int TimeListener = 88;
+    public const int TimeLoop = 89;
+    public const int TimeMultiplier = 90;
+    public const int TransformMoveVector = 91;
+    public const int TransformPosition = 92;
+    public const int TransformPositionTo = 93;
+    public const int TransformRotation = 94;
+    public const int TransformRotationTo = 95;
+    public const int UnloadAssetsByLabel = 96;
+    public const int Vector3Value = 97;
+    public const int Velocity = 98;
+    public const int VelocityListener = 99;
+    public const int VelocityMax = 100;
+    public const int VelocityMin = 101;
+    public const int VelocityModifier = 102;
+    public const int VelocityVector = 103;
 
-    public const int TotalComponents = 102;
+    public const int TotalComponents = 104;
 
     public static readonly string[] componentNames = {
         "Acceleration",
+        "AnyRootCanvasChildListener",
         "AnyTextListener",
         "AnyTextRemovedListener",
         "BeforeMovementStrategyCreate",
@@ -173,6 +176,7 @@ public static class GameComponentsLookup {
         "PointPublisher",
         "PointSubscriber",
         "Prefab",
+        "RootCanvasChild",
         "RootOwner",
         "Rotation",
         "ScaleVector",
@@ -220,6 +224,7 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AccelerationComponent),
+        typeof(AnyRootCanvasChildListenerComponent),
         typeof(AnyTextListenerComponent),
         typeof(AnyTextRemovedListenerComponent),
         typeof(BeforeMovementStrategyCreateComponent),
@@ -278,6 +283,7 @@ public static class GameComponentsLookup {
         typeof(PointPublisherComponent),
         typeof(PointSubscriberComponent),
         typeof(PrefabComponent),
+        typeof(RootCanvasChildComponent),
         typeof(RootOwnerComponent),
         typeof(RotationComponent),
         typeof(ScaleVectorComponent),

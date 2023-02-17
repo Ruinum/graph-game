@@ -13,6 +13,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
         switch (componentIndex)
         {
             case GameComponentsLookup.Acceleration: ReplaceAcceleration(((AccelerationComponent) fromComponent).Value); return;
+            case GameComponentsLookup.AnyRootCanvasChildListener: ReplaceAnyRootCanvasChildListener(((AnyRootCanvasChildListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.AnyTextListener: ReplaceAnyTextListener(((AnyTextListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.AnyTextRemovedListener: ReplaceAnyTextRemovedListener(((AnyTextRemovedListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.BeforeMovementStrategyCreate: ReplaceBeforeMovementStrategyCreate(((BeforeMovementStrategyCreateComponent) fromComponent).Strategy); return;
@@ -77,6 +78,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
                 ReplacePointSubscriber(newPointSubscriber.Strategy,newPointSubscriber.Target); 
                 return;
             case GameComponentsLookup.Prefab: ReplacePrefab(((PrefabComponent) fromComponent).Reference); return;
+            case GameComponentsLookup.RootCanvasChild: isRootCanvasChild = true; return;
             case GameComponentsLookup.RootOwner: ReplaceRootOwner(((RootOwnerComponent) fromComponent).Value); return;
             case GameComponentsLookup.Rotation: ReplaceRotation(((RotationComponent) fromComponent).Value); return;
             case GameComponentsLookup.ScaleVector: ReplaceScaleVector(((ScaleVectorComponent) fromComponent).Value); return;

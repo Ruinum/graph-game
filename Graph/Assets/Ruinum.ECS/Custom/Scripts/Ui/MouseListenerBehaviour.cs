@@ -22,7 +22,7 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
 
         private void OnMouseExit()
         {
-            _onEnterEntity.Destroy();
+            if (_onEnterEntity != null) _onEnterEntity.Destroy();
         }
     }
 }
