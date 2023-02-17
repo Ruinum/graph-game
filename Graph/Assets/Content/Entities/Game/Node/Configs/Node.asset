@@ -36,4 +36,3 @@ MonoBehaviour:
   Nested:
   - {fileID: 11400000, guid: 47681a7e0ab044f8898ccdc213ef1a19, type: 2}
   - {fileID: 11400000, guid: 8de72898ad94f4c4492d90fa5e286004, type: 2}
-  - {fileID: 11400000, guid: cb5cc39b33c9c2c4eb09a73d8a21ef05, type: 2}
