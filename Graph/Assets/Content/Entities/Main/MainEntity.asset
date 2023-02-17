@@ -18,6 +18,7 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: f29f4d1afffca11469a3c4d9654ebe99, type: 2}
     - {fileID: 11400000, guid: 3b0f60f8072c01544ad670744b56285e, type: 2}
+    - {fileID: 11400000, guid: 0ef1abba02cde47b2b8e0c1eab000f08, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -84,7 +85,7 @@ MonoBehaviour:
       Data: 8|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: 9|Ruinum.ECS.Configurations.Game.CreateStrategies.CreateEntityStrategy,
@@ -110,17 +111,40 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.RemoveComponentStrategy,
+      Data: 11|Ruinum.ECS.Configurations.Game.CreateStrategies.CreateEntityStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: EntityConfig
+      Entry: 10
+      Data: 2
+    - Name: Creator
+      Entry: 7
+      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.RemoveComponentStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Components
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.ComponentsContainer, Assembly-CSharp
+      Data: 14|Ruinum.ECS.Configurations.ComponentsContainer, Assembly-CSharp
     - Name: _components
       Entry: 7
-      Data: 13|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+      Data: 15|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 2
@@ -168,7 +192,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 14|TimeComponent, Assembly-CSharp
+      Data: 16|TimeComponent, Assembly-CSharp
     - Name: Value
       Entry: 4
       Data: 2
