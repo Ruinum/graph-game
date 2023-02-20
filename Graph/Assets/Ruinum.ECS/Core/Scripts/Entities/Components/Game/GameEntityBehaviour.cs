@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Ruinum.ECS.Scripts.Entities.Components.Game
 {
     [DisallowMultipleComponent]
-    public sealed class GameEntityBehaviour : MonoBehaviour
+    public sealed class GameEntityBehaviour : MonoBehaviour, IDestroyedListener
     {
         public GameEntity Entity { get; private set; }
         private readonly List<GameEntityComponentBehaviour> _behaviours = new List<GameEntityComponentBehaviour>();
@@ -21,11 +21,22 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
             }
             Entity = entity;
             Entity.Retain(this);
+            AddDestroyedListener();
             foreach (var component in GetComponents<GameEntityComponentBehaviour>())
             {
                 _behaviours.Add(component);
                 component.SetEntity(Entity);
             }
+        }
+
+        private void AddDestroyedListener()
+        {
+            Entity.AddDestroyedListener(this);
+        }
+
+        private void RemoveDestroyedListener()
+        {
+            Entity.RemoveDestroyedListener(this);
         }
 
         private void OnDestroy()
@@ -41,7 +52,7 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
         public void OnDestroyed(GameEntity entity)
         {
             if (!this.IsNull())
-            {            
+            {
                 Destroy(gameObject);
             }
             if (Entity == null || !Entity.isEnabled)
@@ -53,6 +64,7 @@ namespace Ruinum.ECS.Scripts.Entities.Components.Game
 
         private void ReleaseEntity()
         {
+            RemoveDestroyedListener();
             Entity.Release(this);
             foreach (var component in _behaviours)
             {

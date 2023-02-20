@@ -26,94 +26,96 @@ public static class GameComponentsLookup {
     public const int CreatorEntity = 15;
     public const int Destroyed = 16;
     public const int DestroyedListener = 17;
-    public const int DestroyStrategyCreate = 18;
-    public const int DestroyStrategyProcess = 19;
-    public const int EntityType = 20;
-    public const int FloatModifier = 21;
-    public const int FloatModifierListener = 22;
-    public const int FloatValue = 23;
-    public const int FloatValueListener = 24;
-    public const int FloatValuePublisher = 25;
-    public const int FloatValueSubscriber = 26;
-    public const int GameCreatedEntity = 27;
-    public const int GameObject = 28;
-    public const int GameOwnerTransformChild = 29;
-    public const int GameTarget = 30;
-    public const int Grounded = 31;
-    public const int InputDomainGame = 32;
-    public const int InstantRotation = 33;
-    public const int LoadAssetsByLabel = 34;
-    public const int LoadAssetsOperationCompleted = 35;
-    public const int LoadAssetsOperation = 36;
-    public const int MainCreator = 37;
-    public const int MaxFloatValue = 38;
-    public const int MaxFloatValueListener = 39;
-    public const int Mesh = 40;
-    public const int MeshListener = 41;
-    public const int MinFloatValue = 42;
-    public const int MinFloatValueListener = 43;
-    public const int MoveDistance = 44;
-    public const int MoveDistanceListener = 45;
-    public const int Movement = 46;
-    public const int MovementDirection = 47;
-    public const int MovementListener = 48;
-    public const int MovementStrategyCreate = 49;
-    public const int MovementStrategyProcess = 50;
-    public const int NextFrameDestroy = 51;
-    public const int Owner = 52;
-    public const int OwnerEntityConfigIndexKey = 53;
-    public const int OwnerEntityTypeIndexKey = 54;
-    public const int Point = 55;
-    public const int PointListener = 56;
-    public const int PointPublisher = 57;
-    public const int PointSubscriber = 58;
-    public const int Prefab = 59;
-    public const int RootCanvasChild = 60;
-    public const int RootOwner = 61;
-    public const int Rotation = 62;
-    public const int ScaleVector = 63;
-    public const int ScaleVectorListener = 64;
-    public const int SceneConfig = 65;
-    public const int SceneLoaded = 66;
-    public const int SceneLoadingProcess = 67;
-    public const int SceneLoadMode = 68;
-    public const int SceneLoadProgress = 69;
-    public const int SecondFloatValue = 70;
-    public const int SecondFloatValueListener = 71;
-    public const int Services = 72;
-    public const int SmoothRotation = 73;
-    public const int SmoothRotationSpeed = 74;
-    public const int Sprite = 75;
-    public const int SpriteListener = 76;
-    public const int StartTime = 77;
-    public const int StartTimeListener = 78;
-    public const int StrategyCreate = 79;
-    public const int StrategyProcess = 80;
-    public const int TargetEntityConfig = 81;
-    public const int TargetMainCreator = 82;
-    public const int TargetPublisher = 83;
-    public const int TargetSubscriber = 84;
-    public const int Text = 85;
-    public const int TextListener = 86;
-    public const int Time = 87;
-    public const int TimeListener = 88;
-    public const int TimeLoop = 89;
-    public const int TimeMultiplier = 90;
-    public const int TransformMoveVector = 91;
-    public const int TransformPosition = 92;
-    public const int TransformPositionTo = 93;
-    public const int TransformRotation = 94;
-    public const int TransformRotationTo = 95;
-    public const int UnloadAssetsByLabel = 96;
-    public const int Vector3Value = 97;
-    public const int Velocity = 98;
-    public const int VelocityListener = 99;
-    public const int VelocityMax = 100;
-    public const int VelocityMin = 101;
-    public const int VelocityModifier = 102;
-    public const int VelocityVector = 103;
+    public const int DestroyedPublisher = 18;
+    public const int DestroyedSubscriber = 19;
+    public const int DestroyStrategyCreate = 20;
+    public const int DestroyStrategyProcess = 21;
+    public const int EntityType = 22;
+    public const int FloatModifier = 23;
+    public const int FloatModifierListener = 24;
+    public const int FloatValue = 25;
+    public const int FloatValueListener = 26;
+    public const int FloatValuePublisher = 27;
+    public const int FloatValueSubscriber = 28;
+    public const int GameCreatedEntity = 29;
+    public const int GameObject = 30;
+    public const int GameOwnerTransformChild = 31;
+    public const int GameTarget = 32;
+    public const int Grounded = 33;
+    public const int InputDomainGame = 34;
+    public const int InstantRotation = 35;
+    public const int LoadAssetsByLabel = 36;
+    public const int LoadAssetsOperationCompleted = 37;
+    public const int LoadAssetsOperation = 38;
+    public const int MainCreator = 39;
+    public const int MaxFloatValue = 40;
+    public const int MaxFloatValueListener = 41;
+    public const int Mesh = 42;
+    public const int MeshListener = 43;
+    public const int MinFloatValue = 44;
+    public const int MinFloatValueListener = 45;
+    public const int MoveDistance = 46;
+    public const int MoveDistanceListener = 47;
+    public const int Movement = 48;
+    public const int MovementDirection = 49;
+    public const int MovementListener = 50;
+    public const int MovementStrategyCreate = 51;
+    public const int MovementStrategyProcess = 52;
+    public const int NextFrameDestroy = 53;
+    public const int Owner = 54;
+    public const int OwnerEntityConfigIndexKey = 55;
+    public const int OwnerEntityTypeIndexKey = 56;
+    public const int Point = 57;
+    public const int PointListener = 58;
+    public const int PointPublisher = 59;
+    public const int PointSubscriber = 60;
+    public const int Prefab = 61;
+    public const int RootCanvasChild = 62;
+    public const int RootOwner = 63;
+    public const int Rotation = 64;
+    public const int ScaleVector = 65;
+    public const int ScaleVectorListener = 66;
+    public const int SceneConfig = 67;
+    public const int SceneLoaded = 68;
+    public const int SceneLoadingProcess = 69;
+    public const int SceneLoadMode = 70;
+    public const int SceneLoadProgress = 71;
+    public const int SecondFloatValue = 72;
+    public const int SecondFloatValueListener = 73;
+    public const int Services = 74;
+    public const int SmoothRotation = 75;
+    public const int SmoothRotationSpeed = 76;
+    public const int Sprite = 77;
+    public const int SpriteListener = 78;
+    public const int StartTime = 79;
+    public const int StartTimeListener = 80;
+    public const int StrategyCreate = 81;
+    public const int StrategyProcess = 82;
+    public const int TargetEntityConfig = 83;
+    public const int TargetMainCreator = 84;
+    public const int TargetPublisher = 85;
+    public const int TargetSubscriber = 86;
+    public const int Text = 87;
+    public const int TextListener = 88;
+    public const int Time = 89;
+    public const int TimeListener = 90;
+    public const int TimeLoop = 91;
+    public const int TimeMultiplier = 92;
+    public const int TransformMoveVector = 93;
+    public const int TransformPosition = 94;
+    public const int TransformPositionTo = 95;
+    public const int TransformRotation = 96;
+    public const int TransformRotationTo = 97;
+    public const int UnloadAssetsByLabel = 98;
+    public const int Vector3Value = 99;
+    public const int Velocity = 100;
+    public const int VelocityListener = 101;
+    public const int VelocityMax = 102;
+    public const int VelocityMin = 103;
+    public const int VelocityModifier = 104;
+    public const int VelocityVector = 105;
 
-    public const int TotalComponents = 104;
+    public const int TotalComponents = 106;
 
     public static readonly string[] componentNames = {
         "Acceleration",
@@ -134,6 +136,8 @@ public static class GameComponentsLookup {
         "CreatorEntity",
         "Destroyed",
         "DestroyedListener",
+        "DestroyedPublisher",
+        "DestroyedSubscriber",
         "DestroyStrategyCreate",
         "DestroyStrategyProcess",
         "EntityType",
@@ -241,6 +245,8 @@ public static class GameComponentsLookup {
         typeof(CreatorEntityComponent),
         typeof(DestroyedComponent),
         typeof(DestroyedListenerComponent),
+        typeof(DestroyedPublisherComponent),
+        typeof(DestroyedSubscriberComponent),
         typeof(DestroyStrategyCreateComponent),
         typeof(DestroyStrategyProcessComponent),
         typeof(EntityTypeComponent),

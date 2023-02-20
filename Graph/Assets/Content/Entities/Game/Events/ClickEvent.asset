@@ -29,7 +29,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|NextFrameDestroyComponent, Assembly-CSharp
+      Data: 1|DestroyedComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 

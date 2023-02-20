@@ -10,7 +10,6 @@ namespace Ruinum.ECS.Systems.Features
     {
         public GameSystems(Contexts contexts, IGameServices services)
         {
-            Add(new RootCanvasInitializeSystem());
             Add(new EntityStrategySystem(contexts.game));
 
             Add(new TargetPublisherSubscriberSystem(contexts.game));

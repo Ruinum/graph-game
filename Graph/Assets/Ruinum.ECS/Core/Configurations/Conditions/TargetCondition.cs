@@ -5,7 +5,8 @@ namespace Ruinum.ECS.Core.Conditions
     public class TargetCondition : EntityCondition
     {
         public ITargetStrategy TargetStrategy;
-        public IEntityCondition Condition;
+        public IEntityCondition Condition = new TrueCondition();
+
         protected override bool IsTrue(GameEntity entity)
         {
             if (!TargetStrategy.TryGet(entity, out var target))

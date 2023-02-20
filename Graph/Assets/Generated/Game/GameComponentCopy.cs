@@ -30,6 +30,11 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.CreatorEntity: ReplaceCreatorEntity(((CreatorEntityComponent) fromComponent).Value); return;
             case GameComponentsLookup.Destroyed: isDestroyed = true; return;
             case GameComponentsLookup.DestroyedListener: ReplaceDestroyedListener(((DestroyedListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.DestroyedPublisher: ReplaceDestroyedPublisher(((DestroyedPublisherComponent) fromComponent).Subscribers); return;
+            case GameComponentsLookup.DestroyedSubscriber: 
+                var newDestroyedSubscriber = (DestroyedSubscriberComponent) fromComponent;
+                ReplaceDestroyedSubscriber(newDestroyedSubscriber.Strategy,newDestroyedSubscriber.Target); 
+                return;
             case GameComponentsLookup.DestroyStrategyCreate: ReplaceDestroyStrategyCreate(((DestroyStrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.DestroyStrategyProcess: ReplaceDestroyStrategyProcess(((DestroyStrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.EntityType: ReplaceEntityType(((EntityTypeComponent) fromComponent).Value); return;
