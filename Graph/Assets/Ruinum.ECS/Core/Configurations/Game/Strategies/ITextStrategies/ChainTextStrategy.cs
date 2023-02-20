@@ -7,7 +7,9 @@ namespace Ruinum.ECS.Core.Configurations.Game.Strategies.Texts
 {
     public class ChainTextStrategy : TextStrategy
     {
-        [AssetSelector(Filter = "t:EntityStrategyConfig", DisableListAddButtonBehaviour = true)] [ListDrawerSettings(CustomAddFunction = nameof(OnButtonAdd))] [LabelWidth(EditorConstants.SmallLabelWidth)] public ITextStrategy[] Data = new ITextStrategy[0];
+        [AssetSelector(Filter = "t:EntityStrategyConfig", DisableListAddButtonBehaviour = true)] 
+        [ListDrawerSettings(CustomAddFunction = nameof(OnButtonAdd))] 
+        [LabelWidth(EditorConstants.SmallLabelWidth)] public ITextStrategy[] Data = new ITextStrategy[0];
 
         public override bool TryGet(GameEntity entity, out string text)
         {
@@ -29,6 +31,6 @@ namespace Ruinum.ECS.Core.Configurations.Game.Strategies.Texts
         }
 
 
-        private IEntityStrategy OnButtonAdd() => null;
+        private ITextStrategy OnButtonAdd() => new SimpleStringTextStrategy();
     }
 }
