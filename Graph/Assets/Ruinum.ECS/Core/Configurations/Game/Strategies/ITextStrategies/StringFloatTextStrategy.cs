@@ -16,7 +16,7 @@ namespace Ruinum.ECS.Configurations.Game.Strategies
             text = default;
             if (!Strategy.TryGet(entity, out var value))
             {
-                //Logging;
+                if(Logging) LogErrorNotFound("TextComponent", (nameof(entity), entity), (nameof(Strategy), Strategy));
                 return false;
             }
 
