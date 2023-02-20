@@ -423,8 +423,8 @@ MonoBehaviour:
       Entry: 7
       Data: 38|TextComponent, Assembly-CSharp
     - Name: Value
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
