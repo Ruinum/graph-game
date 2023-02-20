@@ -32,7 +32,7 @@ MonoBehaviour:
       Data: 1|FloatValueComponent, Assembly-CSharp
     - Name: Value
       Entry: 4
-      Data: 0
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
