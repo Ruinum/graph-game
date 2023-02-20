@@ -28,6 +28,15 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
             ""id"": ""ed6ac180-f9bc-4fc6-929e-162955fb8ae2"",
             ""actions"": [
                 {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""0a0a994d-27c5-47c5-8712-72918df75846"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Look"",
                     ""type"": ""Value"",
                     ""id"": ""5a6a1d68-0873-4811-a347-51c7cc292807"",
@@ -287,17 +296,6 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""eaae59b8-fd46-4294-a60d-73785db6317b"",
-                    ""path"": ""<Mouse>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""58240299-3881-4ccc-affa-cfca6a398c22"",
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
@@ -372,6 +370,28 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                     ""action"": ""Alpha3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""06e83129-3664-45f8-9ddc-9b2d42b1c0ee"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eaae59b8-fd46-4294-a60d-73785db6317b"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -408,6 +428,7 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
 }");
         // Game
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
+        m_Game_Click = m_Game.FindAction("Click", throwIfNotFound: true);
         m_Game_Look = m_Game.FindAction("Look", throwIfNotFound: true);
         m_Game_Move = m_Game.FindAction("Move", throwIfNotFound: true);
         m_Game_Jump = m_Game.FindAction("Jump", throwIfNotFound: true);
@@ -485,6 +506,7 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
     // Game
     private readonly InputActionMap m_Game;
     private IGameActions m_GameActionsCallbackInterface;
+    private readonly InputAction m_Game_Click;
     private readonly InputAction m_Game_Look;
     private readonly InputAction m_Game_Move;
     private readonly InputAction m_Game_Jump;
@@ -504,6 +526,7 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
     {
         private @UserInput m_Wrapper;
         public GameActions(@UserInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Click => m_Wrapper.m_Game_Click;
         public InputAction @Look => m_Wrapper.m_Game_Look;
         public InputAction @Move => m_Wrapper.m_Game_Move;
         public InputAction @Jump => m_Wrapper.m_Game_Jump;
@@ -528,6 +551,9 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_GameActionsCallbackInterface != null)
             {
+                @Click.started -= m_Wrapper.m_GameActionsCallbackInterface.OnClick;
+                @Click.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnClick;
+                @Click.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnClick;
                 @Look.started -= m_Wrapper.m_GameActionsCallbackInterface.OnLook;
                 @Look.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnLook;
                 @Look.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnLook;
@@ -577,6 +603,9 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
             m_Wrapper.m_GameActionsCallbackInterface = instance;
             if (instance != null)
             {
+                @Click.started += instance.OnClick;
+                @Click.performed += instance.OnClick;
+                @Click.canceled += instance.OnClick;
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
@@ -661,6 +690,7 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
     public GameSettingsActions @GameSettings => new GameSettingsActions(this);
     public interface IGameActions
     {
+        void OnClick(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
