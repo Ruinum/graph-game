@@ -51,13 +51,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
-  - m_GUID: 5d6008229c963ff41a8ab038502746de
-    m_Address: DemolishButtonUI
+  - m_GUID: 6b7048f23e6d5449e8a167bce34744c7
+    m_Address: MoneyUI
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
-  - m_GUID: 6b7048f23e6d5449e8a167bce34744c7
-    m_Address: MoneyUI
+  - m_GUID: a7da56bb4e6f54cfbb22afa4a790572a
+    m_Address: UnitAmountUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: a66918e3cca304a8899c20a76a11afcf
+    m_Address: HappinessUI
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload

@@ -60,6 +60,11 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.MainCreator: isMainCreator = true; return;
             case GameComponentsLookup.MaxFloatValue: ReplaceMaxFloatValue(((MaxFloatValueComponent) fromComponent).Value); return;
             case GameComponentsLookup.MaxFloatValueListener: ReplaceMaxFloatValueListener(((MaxFloatValueListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.MaxFloatValuePublisher: ReplaceMaxFloatValuePublisher(((MaxFloatValuePublisherComponent) fromComponent).Subscribers); return;
+            case GameComponentsLookup.MaxFloatValueSubscriber: 
+                var newMaxFloatValueSubscriber = (MaxFloatValueSubscriberComponent) fromComponent;
+                ReplaceMaxFloatValueSubscriber(newMaxFloatValueSubscriber.Strategy,newMaxFloatValueSubscriber.Target); 
+                return;
             case GameComponentsLookup.Mesh: ReplaceMesh(((MeshComponent) fromComponent).Reference); return;
             case GameComponentsLookup.MeshListener: ReplaceMeshListener(((MeshListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.MinFloatValue: ReplaceMinFloatValue(((MinFloatValueComponent) fromComponent).Value); return;

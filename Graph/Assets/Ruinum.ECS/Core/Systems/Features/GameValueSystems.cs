@@ -7,6 +7,7 @@ namespace Ruinum.ECS.Systems.Features
         public GameValueSystems(Contexts contexts)
         {
             Add(new FloatValuePublisherSubscriberSystem(contexts.game));
+            Add(new MaxFloatValuePublisherSubscriberSystem(contexts.game));
         }
     }
 }
