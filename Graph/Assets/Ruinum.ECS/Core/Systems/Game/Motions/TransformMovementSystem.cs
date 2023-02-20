@@ -1,5 +1,4 @@
-﻿using Ruinum.ECS.Core.Systems.Log;
-using Ruinum.ECS.Extensions;
+﻿using Ruinum.ECS.Extensions;
 
 namespace Ruinum.ECS.Systems.Game.Motions
 {
@@ -12,7 +11,7 @@ namespace Ruinum.ECS.Systems.Game.Motions
         protected override void Execute(GameEntity entity)
         {
             var owner = entity.RootOwnerEntity;
-            owner.ReplaceTransformMoveVector(entity.movement.Value);
+            owner.ReplaceTransformMoveVector(owner.GetTransformMoveVector() + entity.movement.Value); 
         }
     }
 }

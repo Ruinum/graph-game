@@ -28,7 +28,7 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|ChildTransformByConfigComponent, Assembly-CSharp
@@ -82,31 +82,6 @@ MonoBehaviour:
     - Name: Config
       Entry: 10
       Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 7|PrefabComponent, Assembly-CSharp
-    - Name: Reference
-      Entry: 7
-      Data: 8|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
-    - Name: m_AssetGUID
-      Entry: 1
-      Data: 53e5c750c96b74d988ba87933dd3a2bb
-    - Name: m_SubObjectName
-      Entry: 1
-      Data: 
-    - Name: m_SubObjectType
-      Entry: 1
-      Data: 
-    - Name: m_EditorAssetChanged
-      Entry: 5
-      Data: false
     - Name: 
       Entry: 8
       Data: 

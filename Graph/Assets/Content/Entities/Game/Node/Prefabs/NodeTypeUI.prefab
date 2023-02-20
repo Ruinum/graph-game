@@ -113,7 +113,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _onClickConfig: {fileID: 11400000, guid: eaaeaebc8fe04464082207d0b2fac7a8, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: 79ff04666d893434eb0825c5137132fd, type: 2}
   _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
 --- !u!58 &4224678547032653819
 CircleCollider2D:
@@ -864,7 +864,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _onClickConfig: {fileID: 11400000, guid: bbd09a1c3a613c746a2ad452dc2d09da, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: 9c6059c1f0c5c8f46992270615ad42b1, type: 2}
   _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
 --- !u!58 &8324083281869323020
 CircleCollider2D:
@@ -995,7 +995,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _onClickConfig: {fileID: 11400000, guid: 58c2bf5f1da2943bd93e507616a015fd, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: 621b1a76d32260e4c827635661f27698, type: 2}
   _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
 --- !u!58 &2827063376760378385
 CircleCollider2D:
@@ -1025,8 +1025,8 @@ GameObject:
   - component: {fileID: 364773639474623430}
   - component: {fileID: 8325476046988068748}
   - component: {fileID: 6824079849065529098}
-  - component: {fileID: 2942855296894178543}
   - component: {fileID: 4239267905618326410}
+  - component: {fileID: 4531657740772471555}
   m_Layer: 5
   m_Name: Factory
   m_TagString: Untagged
@@ -1105,7 +1105,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d366fb471fc7394fa1c6ec63e0a434c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2942855296894178543
+--- !u!58 &4239267905618326410
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982059378650973579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.7
+--- !u!114 &4531657740772471555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1126,21 +1142,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _onClickConfig: {fileID: 11400000, guid: 2bded461db47a43428a33cfbd837b34d, type: 2}
+  _onClickConfig: {fileID: 11400000, guid: f7e569d661e08ab4fa8285ff61ffdd08, type: 2}
   _onEnterConfig: {fileID: 11400000, guid: c69279ff98d9aa94397c1fe2521a7542, type: 2}
---- !u!58 &4239267905618326410
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6982059378650973579}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.7
