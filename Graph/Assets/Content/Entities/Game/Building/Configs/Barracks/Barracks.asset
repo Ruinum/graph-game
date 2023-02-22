@@ -26,7 +26,16 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|TextComponent, Assembly-CSharp
+    - Name: Value
+      Entry: 1
+      Data: Barracks
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -35,7 +44,7 @@ MonoBehaviour:
       Data: 
   Nested:
   - {fileID: 11400000, guid: 380becfe0ff14b64db7db3d5cd9c96a4, type: 2}
-  - {fileID: 11400000, guid: 47681a7e0ab044f8898ccdc213ef1a19, type: 2}
   - {fileID: 11400000, guid: 81e3bf10c35f44f4d8ba3d9d15cf5797, type: 2}
+  - {fileID: 11400000, guid: 47681a7e0ab044f8898ccdc213ef1a19, type: 2}
   - {fileID: 11400000, guid: 8ec8708b4780442d68cb4cec6c08067b, type: 2}
   - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}

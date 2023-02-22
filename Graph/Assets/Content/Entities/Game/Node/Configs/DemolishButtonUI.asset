@@ -16,7 +16,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 47681a7e0ab044f8898ccdc213ef1a19, type: 2}
     - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -31,36 +30,27 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 7
-      Data: 1|ChildTransformByConfigComponent, Assembly-CSharp
-    - Name: Config
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 2|DestroyStrategyProcessComponent, Assembly-CSharp
+      Data: 1|DestroyStrategyProcessComponent, Assembly-CSharp
     - Name: Strategy
       Entry: 7
-      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainEntityStrategy,
+      Data: 2|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Data
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData[],
+      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
+      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
       Entry: 7
-      Data: 6|Ruinum.ECS.Core.Conditions.TargetCondition, Assembly-CSharp
+      Data: 5|Ruinum.ECS.Core.Conditions.TargetCondition, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
@@ -69,20 +59,20 @@ MonoBehaviour:
       Data: true
     - Name: TargetStrategy
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Config
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: Condition
       Entry: 7
-      Data: 8|Ruinum.ECS.Core.Conditions.TrueCondition, Assembly-CSharp
+      Data: 7|Ruinum.ECS.Core.Conditions.TrueCondition, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
@@ -97,14 +87,14 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 9|Ruinum.ECS.Core.Configurations.Game.Strategies.DestroyEntityStrategy,
+      Data: 8|Ruinum.ECS.Core.Configurations.Game.Strategies.DestroyEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -132,10 +122,10 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|PrefabComponent, Assembly-CSharp
+      Data: 10|PrefabComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 12|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+      Data: 11|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
         Assembly-CSharp]], Assembly-CSharp
     - Name: m_AssetGUID
       Entry: 1
@@ -152,6 +142,12 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|RootCanvasChildComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
