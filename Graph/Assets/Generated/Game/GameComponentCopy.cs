@@ -37,6 +37,13 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
                 return;
             case GameComponentsLookup.DestroyStrategyCreate: ReplaceDestroyStrategyCreate(((DestroyStrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.DestroyStrategyProcess: ReplaceDestroyStrategyProcess(((DestroyStrategyProcessComponent) fromComponent).Strategy); return;
+            case GameComponentsLookup.EntityList: ReplaceEntityList(((EntityListComponent) fromComponent).Value); return;
+            case GameComponentsLookup.EntityListListener: ReplaceEntityListListener(((EntityListListenerComponent) fromComponent).value); return;
+            case GameComponentsLookup.EntityListPublisher: ReplaceEntityListPublisher(((EntityListPublisherComponent) fromComponent).Subscribers); return;
+            case GameComponentsLookup.EntityListSubscriber: 
+                var newEntityListSubscriber = (EntityListSubscriberComponent) fromComponent;
+                ReplaceEntityListSubscriber(newEntityListSubscriber.Strategy,newEntityListSubscriber.Target); 
+                return;
             case GameComponentsLookup.EntityType: ReplaceEntityType(((EntityTypeComponent) fromComponent).Value); return;
             case GameComponentsLookup.FloatModifier: ReplaceFloatModifier(((FloatModifierComponent) fromComponent).Value); return;
             case GameComponentsLookup.FloatModifierListener: ReplaceFloatModifierListener(((FloatModifierListenerComponent) fromComponent).value); return;
@@ -110,6 +117,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.StrategyCreate: ReplaceStrategyCreate(((StrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.StrategyProcess: ReplaceStrategyProcess(((StrategyProcessComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.TargetEntityConfig: ReplaceTargetEntityConfig(((TargetEntityConfigComponent) fromComponent).Value); return;
+            case GameComponentsLookup.TargetEntityListMember: isTargetEntityListMember = true; return;
             case GameComponentsLookup.TargetMainCreator: ReplaceTargetMainCreator(((TargetMainCreatorComponent) fromComponent).Value); return;
             case GameComponentsLookup.TargetPublisher: ReplaceTargetPublisher(((TargetPublisherComponent) fromComponent).Subscribers); return;
             case GameComponentsLookup.TargetSubscriber: 

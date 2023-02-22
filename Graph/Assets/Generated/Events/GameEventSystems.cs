@@ -10,6 +10,7 @@ public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
         Add(new ComponentDataContainerEventSystem(contexts)); // priority: 0
+        Add(new EntityListEventSystem(contexts)); // priority: 0
         Add(new FloatModifierEventSystem(contexts)); // priority: 0
         Add(new FloatValueEventSystem(contexts)); // priority: 0
         Add(new MaxFloatValueEventSystem(contexts)); // priority: 0

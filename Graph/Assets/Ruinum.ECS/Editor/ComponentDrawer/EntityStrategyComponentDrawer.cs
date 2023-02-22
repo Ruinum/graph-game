@@ -2,7 +2,6 @@
 using Entitas;
 
 using Ruinum.ECS.Configurations.Game.Strategies;
-using Ruinum.ECS.Editor.ComponentDrawer;
 using Ruinum.ECS.Core.Extensions.Native;
 
 using Sirenix.OdinInspector.Editor;
@@ -10,7 +9,7 @@ using Sirenix.Utilities.Editor;
 
 using UnityEditor;
 
-namespace Ruinum.Editor.ComponentDrawer
+namespace Ruinum.ECS.Editor.ComponentDrawer
 {
     public sealed class EntityStrategyComponentDrawer : IConfigComponentDrawer
     {

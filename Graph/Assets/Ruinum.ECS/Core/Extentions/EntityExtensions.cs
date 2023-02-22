@@ -5,7 +5,7 @@ using Ruinum.ECS.Core.Extensions.Unity;
 using Ruinum.ECS.Core.Systems.Log;
 using Ruinum.ECS.Entity.Interfaces;
 using Ruinum.ECS.Utilities;
-
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Ruinum.ECS.Extensions
@@ -238,6 +238,12 @@ namespace Ruinum.ECS.Extensions
             }
             rotation = default;
             return false;
+        }
+
+        public static EntityListComponent CreateGameEntityListComponent(this GameEntity entity)
+        {
+            entity.ReplaceEntityList(new List<GameEntity>());
+            return entity.entityList;
         }
     }
 }

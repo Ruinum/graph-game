@@ -1,10 +1,9 @@
 ﻿using System;
 using Entitas;
-using Ruinum.ECS.Editor.ComponentDrawer;
 using UnityEditor;
 
 
-namespace Ruinum.Editor.ComponentDrawer
+namespace Ruinum.ECS.Editor.ComponentDrawer
 {
     public sealed class TextComponentDrawer : IConfigComponentDrawer
     {

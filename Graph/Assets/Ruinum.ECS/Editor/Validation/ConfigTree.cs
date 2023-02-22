@@ -12,7 +12,6 @@ using Ruinum.ECS.Configurations;
 using Ruinum.ECS.Configurations.Game;
 using Ruinum.ECS.Configurations.Game.Indexes;
 using Ruinum.ECS.Core.Extensions.Unity;
-using Ruinum.ECS.Editor;
 using Ruinum.ECS.Services;
 
 using TMPro;
@@ -23,7 +22,7 @@ using Object = UnityEngine.Object;
 using UnityEngine.AddressableAssets;
 using Ruinum.ECS.Scripts.Entities.Components.Game;
 
-namespace Ruinum.Editor.Validation
+namespace Ruinum.ECS.Editor.Validation
 {
     public class ConfigTree
     {

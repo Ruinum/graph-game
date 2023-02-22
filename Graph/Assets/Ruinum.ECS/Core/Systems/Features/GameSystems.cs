@@ -13,6 +13,8 @@ namespace Ruinum.ECS.Systems.Features
             Add(new EntityStrategySystem(contexts.game));
 
             Add(new TargetPublisherSubscriberSystem(contexts.game));
+            Add(new TargetEntityListMemberSystem(contexts.game));
+            Add(new EntityListPublisherSubscriberSystem(contexts.game));
 
             Add(new GameValueSystems(contexts));
 

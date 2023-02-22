@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 
 namespace Ruinum.ECS.Editor
 {
-    public static class AssetUtilities
+    public static class AssetUtilities 
     {
         public static List<T> GetAssetsInFolder<T>(string path) where T : Object
         {
