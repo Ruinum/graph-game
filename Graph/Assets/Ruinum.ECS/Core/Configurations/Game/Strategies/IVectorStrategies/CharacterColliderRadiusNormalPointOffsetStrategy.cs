@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies
 {
-    public sealed class CharacterColliderRadiusByDirectionPointOffsetStrategy : VectorStrategy
+    public sealed class CharacterColliderRadiusNormalPointOffsetStrategy : VectorStrategy
     {
         [LabelWidth(EditorConstants.MiddleLabelWidth)] public VectorStrategy PointStrategy = new PointStrategy {TargetStrategy = new CurrentEntityTargetStrategy()};
         [LabelWidth(EditorConstants.MiddleLabelWidth)] public VectorStrategy DirectionStrategy;
