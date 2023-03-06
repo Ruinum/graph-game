@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: Match
+  m_Name: Camera
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,20 +26,42 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|CameraComponent, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 7
+      Data: 3|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 3fa5f74588b625f4f80a2e050350a394
+    - Name: m_SubObjectName
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 1
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  Nested:
-  - {fileID: 11400000, guid: e47858665f47eac488649183366257d4, type: 2}
-  - {fileID: 11400000, guid: 8e09647614922484497a7a69bc3ad3b8, type: 2}
-  - {fileID: 11400000, guid: 7710767cd93474e519c501d7ca2e35ee, type: 2}
-  - {fileID: 11400000, guid: cc5b24d10887a4e529d2f91cd5be882f, type: 2}
-  - {fileID: 11400000, guid: 012af14456a1347d9b7384f12d4a6275, type: 2}
-  - {fileID: 11400000, guid: b8ab14c77adf64bc5be56b668c84bf95, type: 2}
-  - {fileID: 11400000, guid: 3a51e8c7647de4d9bace5687bfcf0f6a, type: 2}
-  - {fileID: 11400000, guid: 3569ce82f9e4144488da9570ef1bbcd9, type: 2}
-  - {fileID: 11400000, guid: 767853fc6dc71dd48b485370b1dd1928, type: 2}
+  Nested: []

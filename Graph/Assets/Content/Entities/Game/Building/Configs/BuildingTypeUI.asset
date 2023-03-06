@@ -145,8 +145,8 @@ MonoBehaviour:
       Entry: 7
       Data: 12|TextComponent, Assembly-CSharp
     - Name: Value
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: NULL
     - Name: 
       Entry: 8
       Data: 

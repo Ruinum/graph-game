@@ -99,7 +99,33 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: Strategy
-      Entry: 6
+      Entry: 7
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.RaycastFromCameraToCursorTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: true
+    - Name: Strategy
+      Entry: 7
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Layers.SimpleLayerMaskStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Layer
+      Entry: 7
+      Data: UnityEngine.LayerMask, UnityEngine.CoreModule
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -121,7 +147,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 9|TargetEntityConfigComponent, Assembly-CSharp
+      Data: 11|TargetEntityConfigComponent, Assembly-CSharp
     - Name: Value
       Entry: 10
       Data: 2
