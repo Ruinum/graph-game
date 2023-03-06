@@ -15,7 +15,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: aeb6d375364603f499629a31349307c0, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -73,12 +74,12 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateChildEntitiesTargetAllStrategy,
+      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
-    - Name: CreatorStrategy
+    - Name: OwnerStrategy
       Entry: 7
       Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
         Assembly-CSharp
@@ -88,33 +89,23 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: TargetOwnerStrategy
-      Entry: 7
-      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: FilteredConfigs
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateChildEntitiesTargetAllStrategy+ConfigData[],
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateChildEntitiesTargetAllStrategy+ConfigData,
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData,
         Assembly-CSharp
     - Name: Config
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 0
     - Name: ProcessData
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Game.CreateStrategies.TargetToCreatedStrategyData[],
+      Data: 11|Ruinum.ECS.Configurations.Game.CreateStrategies.TargetToCreatedStrategyData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
@@ -154,7 +145,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 13|TextComponent, Assembly-CSharp
+      Data: 12|TextComponent, Assembly-CSharp
     - Name: Value
       Entry: 1
       Data: Factory

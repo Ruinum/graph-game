@@ -35,7 +35,7 @@ namespace Ruinum.ECS.Configurations.Game.Strategies.Targets.All
         private static void CreateEntities(ConfigData config, GameEntity targetEntity, GameEntity ownerEntity, GameEntity creatorEntity)
         {
             var entity = config.Config.Create(ownerEntity);
-            //entity.ReplaceCreatorEntity(creatorEntity);
+            entity.ReplaceCreatorEntity(creatorEntity);
             entity.ReplaceGameTarget(targetEntity);
             for (int i = 0, max = config.ProcessData.Length; i < max; i++)
             {
