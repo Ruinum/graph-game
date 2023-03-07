@@ -385,7 +385,7 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""eaae59b8-fd46-4294-a60d-73785db6317b"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

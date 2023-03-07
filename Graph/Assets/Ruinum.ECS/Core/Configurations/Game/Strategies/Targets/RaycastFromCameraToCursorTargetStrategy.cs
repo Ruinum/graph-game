@@ -33,7 +33,9 @@ namespace Ruinum.ECS.Configurations.Game.Strategies.Targets
                 return false;
             }
             Debug.Log(4);
-            Ray ray = camera.ScreenPointToRay(new Vector3(Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisX(), Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisY()));
+            Ray ray = camera.ScreenPointToRay(new Vector2(Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisX(), Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisY()));
+            Debug.Log(camera.ScreenPointToRay(new Vector2(Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisX(), Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisY())));
+            Debug.DrawRay(ray.origin, ray.direction * 20, color: Color.green, 100);
             if (!Physics.Raycast(ray, out var hit, Mathf.Infinity, mask, QueryTriggerInteraction.Collide))
             {
                 targetEntity = default;
