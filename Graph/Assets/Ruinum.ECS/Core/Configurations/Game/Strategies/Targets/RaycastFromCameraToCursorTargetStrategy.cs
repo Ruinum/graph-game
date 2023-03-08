@@ -11,45 +11,37 @@ namespace Ruinum.ECS.Configurations.Game.Strategies.Targets
 
         public override bool TryGet(GameEntity entity, out GameEntity targetEntity)
         {
-            Debug.Log(1);
             if (Contexts.game.cameraEntity == null)
             {
                 targetEntity = default;
                 if (Logging) LogErrorNotFound(nameof(Contexts.game.cameraEntity), (nameof(entity), entity));
                 return false;
             }
-            Debug.Log(2);
             if (!Contexts.game.cameraEntity.TryGetGameObjectComponent<Camera>(out var camera))
             {
                 targetEntity = default;
                 if (Logging) LogErrorNotFound(nameof(camera), (nameof(entity), entity));
                 return false;
             }
-            Debug.Log(3);
             if (!Strategy.TryGet(entity, out var mask))
             {
                 targetEntity = default;
                 if (Logging) LogErrorNotFound(nameof(mask), (nameof(entity), entity));
                 return false;
             }
-            Debug.Log(4);
             Ray ray = camera.ScreenPointToRay(new Vector2(Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisX(), Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisY()));
-            Debug.Log(camera.ScreenPointToRay(new Vector2(Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisX(), Contexts.sharedInstance.game.services.Instance.Input.GetMouseAxisY())));
-            Debug.DrawRay(ray.origin, ray.direction * 20, color: Color.green, 100);
             if (!Physics.Raycast(ray, out var hit, Mathf.Infinity, mask, QueryTriggerInteraction.Collide))
             {
                 targetEntity = default;
                 if (Logging) LogErrorNotFound(nameof(ray), (nameof(entity), entity));
                 return false;
             }
-            Debug.Log(5);
             if (!hit.collider.TryGetComponent<GameEntityBehaviour>(out var entityBehaviour))
             {
                 targetEntity = default;
                 if (Logging) LogErrorNotFound(nameof(entityBehaviour), (nameof(entity), entity));
                 return false;
             }
-            Debug.Log(6);
             targetEntity = entityBehaviour.Entity;
             return true;
         }
