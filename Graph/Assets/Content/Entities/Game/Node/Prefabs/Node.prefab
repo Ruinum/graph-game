@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2058052282456285924}
   - component: {fileID: 7607746027464612148}
   - component: {fileID: 1431118367838675647}
+  - component: {fileID: 9213764521990474055}
   - component: {fileID: 917416533764508320}
   - component: {fileID: 9080613460862389710}
   - component: {fileID: 1492560768366824216}
@@ -123,6 +124,28 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   EntityConfig: {fileID: 11400000, guid: 68577da5b4099c74e936eaaa37925805, type: 2}
+--- !u!114 &9213764521990474055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2526370852666543164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df1d259412dd9f4ca6ffcdd39bf27d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _updateTransform: 1
 --- !u!114 &917416533764508320
 MonoBehaviour:
   m_ObjectHideFlags: 0
