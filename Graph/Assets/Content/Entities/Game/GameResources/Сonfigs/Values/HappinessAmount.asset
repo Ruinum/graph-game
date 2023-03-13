@@ -59,7 +59,7 @@ MonoBehaviour:
       Data: 4|SecondFloatValueComponent, Assembly-CSharp
     - Name: Value
       Entry: 4
-      Data: 20
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
