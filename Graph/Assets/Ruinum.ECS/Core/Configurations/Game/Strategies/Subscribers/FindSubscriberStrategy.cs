@@ -23,9 +23,6 @@ namespace BeastHour.Configurations.Game.Strategies.Subscribers
                 return false;
             }
             return true;
-            
-            //TODO: Old implementation. Remove.
-            //return Target.TryGet(subscriber, out var target) && Strategy.Process(publisher, target);
         }
     }
 }

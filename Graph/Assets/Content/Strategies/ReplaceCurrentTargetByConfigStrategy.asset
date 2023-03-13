@@ -27,14 +27,14 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
+      Data: true
     - Name: Target
       Entry: 7
       Data: 1|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
+      Data: true
     - Name: 
       Entry: 8
       Data: 
@@ -44,14 +44,14 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
+      Data: true
     - Name: FindStrategy
       Entry: 7
       Data: 3|Ruinum.ECS.Configurations.Game.Strategies.Targets.Find.RootOwnerHierarchyConfigTargetFindStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
+      Data: true
     - Name: 
       Entry: 8
       Data: 
@@ -61,7 +61,7 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
+      Data: true
     - Name: Target
       Entry: 7
       Data: 5|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,

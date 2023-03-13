@@ -160,7 +160,4 @@ MonoBehaviour:
       Data: 
   Nested:
   - {fileID: 11400000, guid: 33ee38b20628c4a53b24ccdb3969e276, type: 2}
-  - {fileID: 11400000, guid: 47681a7e0ab044f8898ccdc213ef1a19, type: 2}
-  - {fileID: 11400000, guid: 81e3bf10c35f44f4d8ba3d9d15cf5797, type: 2}
-  - {fileID: 11400000, guid: 8ec8708b4780442d68cb4cec6c08067b, type: 2}
   - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}
