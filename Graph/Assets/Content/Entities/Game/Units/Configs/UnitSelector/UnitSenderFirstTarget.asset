@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: House
+  m_Name: UnitSenderFirstTarget
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,22 +26,11 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|TextComponent, Assembly-CSharp
-    - Name: Value
-      Entry: 1
-      Data: House
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  Nested:
-  - {fileID: 11400000, guid: 33ee38b20628c4a53b24ccdb3969e276, type: 2}
-  - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}
+  Nested: []
