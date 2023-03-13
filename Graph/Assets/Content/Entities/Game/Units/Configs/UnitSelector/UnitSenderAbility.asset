@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: Selector
+  m_Name: UnitSenderAbility
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -34,6 +34,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   Nested:
-  - {fileID: 11400000, guid: 3bd7d3e090e84994e975625a34c2b1d8, type: 2}
-  - {fileID: 11400000, guid: 3b3e43587ebf0a24ab7600bc1400a98b, type: 2}
-  - {fileID: 11400000, guid: aa7c490cca8255e49a2d5a2178c47587, type: 2}
+  - {fileID: 11400000, guid: d35fdf84a355e914095245ed268d74a6, type: 2}
+  - {fileID: 11400000, guid: 86def59c629ce1d4cafa85062a45017f, type: 2}
+  - {fileID: 11400000, guid: be0099845695ef64ebe5462602b82844, type: 2}
