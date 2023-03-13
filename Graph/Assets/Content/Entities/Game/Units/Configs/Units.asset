@@ -16,9 +16,11 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 68577da5b4099c74e936eaaa37925805, type: 2}
-    - {fileID: 11400000, guid: 910679906cf1d184ea31eb526641502a, type: 2}
+    - {fileID: 11400000, guid: 27a292c7164e10d4e89300579cceebc8, type: 2}
+    - {fileID: 11400000, guid: e412ea018f8dc034ea74f4e2a91f0184, type: 2}
     - {fileID: 11400000, guid: 81e3bf10c35f44f4d8ba3d9d15cf5797, type: 2}
+    - {fileID: 11400000, guid: 40081df5efaa8ee498230c5eda86abd2, type: 2}
+    - {fileID: 11400000, guid: d3257e8431db3594483a2619bffd15e9, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -32,64 +34,34 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 7
-      Data: 1|PrefabComponent, Assembly-CSharp
-    - Name: Reference
-      Entry: 7
-      Data: 2|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
-    - Name: m_AssetGUID
-      Entry: 1
-      Data: 16abc82321f36094d9b91a9bfe5a311f
-    - Name: m_SubObjectName
-      Entry: 1
-      Data: 
-    - Name: m_SubObjectType
-      Entry: 1
-      Data: 
-    - Name: m_EditorAssetChanged
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 3|StrategyCreateComponent, Assembly-CSharp
+      Data: 1|DestroyedSubscriberComponent, Assembly-CSharp
     - Name: Strategy
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
+      Data: 2|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.SubscriberTargetEntityStrategy,
+        Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
-    - Name: Strategies
+    - Name: Strategy
       Entry: 7
-      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainEntityStrategy,
+      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Data
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData[],
+      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
-      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
+      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
       Entry: 7
-      Data: 9|Ruinum.ECS.Core.Conditions.TargetCondition, Assembly-CSharp
+      Data: 6|Ruinum.ECS.Core.Conditions.TargetCondition, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
@@ -98,28 +70,7 @@ MonoBehaviour:
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Strategies
-      Entry: 7
-      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
-        Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
+      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -130,77 +81,36 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
+    - Name: Condition
       Entry: 10
       Data: 1
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Condition
-      Entry: 7
-      Data: 15|Ruinum.ECS.Core.Conditions.TrueCondition, Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Negate
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: Strategy
       Entry: 7
-      Data: 16|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueEntityStrategy,
+      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 17|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategies
       Entry: 7
-      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
         Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
-      Data: 19|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 20|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
+      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -212,11 +122,18 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 21|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -238,42 +155,35 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 22|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.ModifyCurrentFloatValueStrategy,
+      Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.ModifyCurrentFloatValueStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: CurrentValueStrategy
       Entry: 7
-      Data: 23|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
+      Data: 15|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 24|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+      Data: 16|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategies
       Entry: 7
-      Data: 25|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+      Data: 17|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
         Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
-      Data: 26|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 27|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
+      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -285,11 +195,18 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 19|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 28|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 20|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -314,99 +231,21 @@ MonoBehaviour:
       Data: 
     - Name: Modifier
       Entry: 7
-      Data: 29|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.ModifierChainStrategy,
-        Assembly-CSharp
-    - Name: Modifiers
-      Entry: 7
-      Data: 30|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.IModifierStrategy[],
-        Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 31|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SetValueModifierStrategy,
-        Assembly-CSharp
-    - Name: Strategy
-      Entry: 7
-      Data: 32|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: TargetStrategy
-      Entry: 7
-      Data: 33|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 34|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
+      Data: 21|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
         Assembly-CSharp
     - Name: Modifier
       Entry: 3
       Data: 1
     - Name: ModifierValueStrategy
       Entry: 7
-      Data: 35|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
+      Data: 22|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 36|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Strategies
-      Entry: 7
-      Data: 37|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
-        Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 38|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 39|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 40|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 23|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -416,24 +255,6 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
       Data: 
     - Name: 
       Entry: 8
@@ -454,6 +275,86 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 24|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
+    - Name: Condition
+      Entry: 7
+      Data: 25|Ruinum.ECS.Core.Conditions.TargetCondition, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: true
+    - Name: Negate
+      Entry: 5
+      Data: false
+    - Name: TargetStrategy
+      Entry: 7
+      Data: 26|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Strategies
+      Entry: 7
+      Data: 27|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+        Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 28|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 29|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Condition
+      Entry: 7
+      Data: 30|Ruinum.ECS.Core.Conditions.AnyCondition, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: true
+    - Name: Negate
+      Entry: 5
+      Data: false
+    - Name: Conditions
+      Entry: 7
+      Data: 31|System.Collections.Generic.List`1[[Ruinum.ECS.Core.Conditions.IEntityCondition,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -463,11 +364,260 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 8
+      Data: 
+    - Name: Strategy
+      Entry: 7
+      Data: 32|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Strategies
+      Entry: 7
+      Data: 33|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 34|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueEntityStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Target
+      Entry: 7
+      Data: 35|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Strategies
+      Entry: 7
+      Data: 36|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+        Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 37|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 38|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 39|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Strategy
+      Entry: 7
+      Data: 40|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.ModifyCurrentFloatValueStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: CurrentValueStrategy
+      Entry: 7
+      Data: 41|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: TargetStrategy
+      Entry: 7
+      Data: 42|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Strategies
+      Entry: 7
+      Data: 43|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+        Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 44|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 45|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 46|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Modifier
+      Entry: 7
+      Data: 47|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
+        Assembly-CSharp
+    - Name: Modifier
+      Entry: 3
+      Data: 0
+    - Name: ModifierValueStrategy
+      Entry: 7
+      Data: 48|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: TargetStrategy
+      Entry: 7
+      Data: 49|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Config
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: CheckEquality
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Target
+      Entry: 7
+      Data: 50|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 51|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 7
+      Data: 52|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 16abc82321f36094d9b91a9bfe5a311f
+    - Name: m_SubObjectName
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 1
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
