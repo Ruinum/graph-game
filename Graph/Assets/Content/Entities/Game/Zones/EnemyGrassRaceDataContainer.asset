@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d36cedaea0d9e44b40a35f0524ce9b, type: 3}
+  m_Name: EnemyGrassRaceDataContainer
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _data
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 1|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: fc110ce3-3a52-467f-884c-742e80cc9678
+    - Name: Name
+      Entry: 1
+      Data: Barracks
+    - Name: ObjectType
+      Entry: 7
+      Data: 2|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: PrefabComponent, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 7
+      Data: 3|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: 40d2b0c8-666e-4ff1-b147-8f75fa48a303
+    - Name: Name
+      Entry: 1
+      Data: Factory
+    - Name: ObjectType
+      Entry: 9
+      Data: 2
+    - Name: Value
+      Entry: 7
+      Data: 5|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: d13cf42b-c4c8-49c6-868d-052b18d33ebd
+    - Name: Name
+      Entry: 1
+      Data: Theatre
+    - Name: ObjectType
+      Entry: 9
+      Data: 2
+    - Name: Value
+      Entry: 7
+      Data: 7|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: 5c45cce7-ef11-42d5-8205-fa86ce8b0d97
+    - Name: Name
+      Entry: 1
+      Data: House
+    - Name: ObjectType
+      Entry: 9
+      Data: 2
+    - Name: Value
+      Entry: 7
+      Data: 9|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 10|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: 5325dc76-75fd-46d7-a4f9-8a5af1785781
+    - Name: Name
+      Entry: 1
+      Data: Unit
+    - Name: ObjectType
+      Entry: 9
+      Data: 2
+    - Name: Value
+      Entry: 7
+      Data: 11|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  DataTypeConfig: {fileID: 11400000, guid: eab9ce4cec696874aba7eebab0de4b3f, type: 2}

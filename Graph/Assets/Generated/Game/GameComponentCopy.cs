@@ -22,6 +22,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.CharacterController: ReplaceCharacterController(((CharacterControllerComponent) fromComponent).Value); return;
             case GameComponentsLookup.ChildTransformByConfig: ReplaceChildTransformByConfig(((ChildTransformByConfigComponent) fromComponent).Config); return;
             case GameComponentsLookup.ColliderHit: ReplaceColliderHit(((ColliderHitComponent) fromComponent).Value); return;
+            case GameComponentsLookup.Color: ReplaceColor(((ColorComponent) fromComponent).Color); return;
             case GameComponentsLookup.ComponentDataContainer: ReplaceComponentDataContainer(((ComponentDataContainerComponent) fromComponent).Value); return;
             case GameComponentsLookup.ComponentDataContainerListener: ReplaceComponentDataContainerListener(((ComponentDataContainerListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.ConfigIndex: ReplaceConfigIndex(((ConfigIndexComponent) fromComponent).Value); return;

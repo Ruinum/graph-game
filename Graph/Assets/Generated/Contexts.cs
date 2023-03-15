@@ -59,6 +59,7 @@ public partial class Contexts : Entitas.IContexts {
 public partial class Contexts {
 
     public const string ColliderHit = "ColliderHit";
+    public const string Color = "Color";
     public const string ConfigIndex = "ConfigIndex";
     public const string CreatedEntity = "CreatedEntity";
     public const string CreatorEntity = "CreatorEntity";
@@ -74,6 +75,11 @@ public partial class Contexts {
             ColliderHit,
             game.GetGroup(GameMatcher.ColliderHit),
             (e, c) => ((ColliderHitComponent)c).Value));
+
+        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, UnityEngine.Color>(
+            Color,
+            game.GetGroup(GameMatcher.Color),
+            (e, c) => ((ColorComponent)c).Color));
 
         game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, int>(
             ConfigIndex,
@@ -121,6 +127,10 @@ public static class ContextsExtensions {
 
     public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithColliderHit(this GameContext context, GameEntity Value) {
         return ((Entitas.EntityIndex<GameEntity, GameEntity>)context.GetEntityIndex(Contexts.ColliderHit)).GetEntities(Value);
+    }
+
+    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithColor(this GameContext context, UnityEngine.Color Color) {
+        return ((Entitas.EntityIndex<GameEntity, UnityEngine.Color>)context.GetEntityIndex(Contexts.Color)).GetEntities(Color);
     }
 
     public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithConfigIndex(this GameContext context, int Value) {
