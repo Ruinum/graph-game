@@ -9,34 +9,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 981a70cbc3610ae43900a80f6b7a4e41, type: 3}
-  m_Name: UnitsEnemyTargetStrategy
+  m_Script: {fileID: 11500000, guid: 14e055f13b715b64988149fb43ef5681, type: 3}
+  m_Name: PlayerTeamCondition
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 27a292c7164e10d4e89300579cceebc8, type: 2}
+    - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: Target
+    - Name: Condition
       Entry: 7
-      Data: 0|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+      Data: 0|BeastHour.Configurations.Conditions.Entities.Float.FloatEqualOtherCondition,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
-    - Name: Strategies
+    - Name: Negate
+      Entry: 5
+      Data: false
+    - Name: FirstFloat
       Entry: 7
-      Data: 1|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+      Data: 1|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
         Assembly-CSharp
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: TargetStrategy
       Entry: 7
       Data: 2|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
@@ -50,21 +53,24 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 8
+      Data: 
+    - Name: SecondFloat
       Entry: 7
-      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.SimpleFloatValueStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
+    - Name: Value
+      Entry: 4
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    - Name: Equality
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
