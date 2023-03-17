@@ -19,111 +19,114 @@ public static class GameComponentsLookup {
     public const int ChildTransformByConfig = 8;
     public const int ColliderHit = 9;
     public const int Color = 10;
-    public const int ComponentDataContainer = 11;
-    public const int ComponentDataContainerListener = 12;
-    public const int ConfigIndex = 13;
-    public const int ControlledByPlayer = 14;
-    public const int CreatedEntity = 15;
-    public const int CreatorEntity = 16;
-    public const int Destroyed = 17;
-    public const int DestroyedListener = 18;
-    public const int DestroyedPublisher = 19;
-    public const int DestroyedSubscriber = 20;
-    public const int DestroyStrategyCreate = 21;
-    public const int DestroyStrategyProcess = 22;
-    public const int EntityList = 23;
-    public const int EntityListListener = 24;
-    public const int EntityListPublisher = 25;
-    public const int EntityListSubscriber = 26;
-    public const int EntityType = 27;
-    public const int FloatModifier = 28;
-    public const int FloatModifierListener = 29;
-    public const int FloatValue = 30;
-    public const int FloatValueListener = 31;
-    public const int FloatValuePublisher = 32;
-    public const int FloatValueSubscriber = 33;
-    public const int GameCreatedEntity = 34;
-    public const int GameObject = 35;
-    public const int GameOwnerTransformChild = 36;
-    public const int GameTarget = 37;
-    public const int Grounded = 38;
-    public const int InputDomainGame = 39;
-    public const int InstantRotation = 40;
-    public const int LoadAssetsByLabel = 41;
-    public const int LoadAssetsOperationCompleted = 42;
-    public const int LoadAssetsOperation = 43;
-    public const int MainCreator = 44;
-    public const int MaxFloatValue = 45;
-    public const int MaxFloatValueListener = 46;
-    public const int MaxFloatValuePublisher = 47;
-    public const int MaxFloatValueSubscriber = 48;
-    public const int Mesh = 49;
-    public const int MeshListener = 50;
-    public const int MinFloatValue = 51;
-    public const int MinFloatValueListener = 52;
-    public const int MoveDistance = 53;
-    public const int MoveDistanceListener = 54;
-    public const int Movement = 55;
-    public const int MovementDirection = 56;
-    public const int MovementListener = 57;
-    public const int MovementStrategyCreate = 58;
-    public const int MovementStrategyProcess = 59;
-    public const int NextFrameDestroy = 60;
-    public const int Owner = 61;
-    public const int OwnerEntityConfigIndexKey = 62;
-    public const int OwnerEntityTypeIndexKey = 63;
-    public const int Point = 64;
-    public const int PointListener = 65;
-    public const int PointPublisher = 66;
-    public const int PointSubscriber = 67;
-    public const int Prefab = 68;
-    public const int RootCanvasChild = 69;
-    public const int RootOwner = 70;
-    public const int Rotation = 71;
-    public const int ScaleVector = 72;
-    public const int ScaleVectorListener = 73;
-    public const int SceneConfig = 74;
-    public const int SceneLoaded = 75;
-    public const int SceneLoadingProcess = 76;
-    public const int SceneLoadMode = 77;
-    public const int SceneLoadProgress = 78;
-    public const int SecondFloatValue = 79;
-    public const int SecondFloatValueListener = 80;
-    public const int Services = 81;
-    public const int SmoothRotation = 82;
-    public const int SmoothRotationSpeed = 83;
-    public const int Sprite = 84;
-    public const int SpriteListener = 85;
-    public const int StartTime = 86;
-    public const int StartTimeListener = 87;
-    public const int StrategyCreate = 88;
-    public const int StrategyProcess = 89;
-    public const int TargetEntityConfig = 90;
-    public const int TargetEntityListMember = 91;
-    public const int TargetMainCreator = 92;
-    public const int TargetPublisher = 93;
-    public const int TargetSubscriber = 94;
-    public const int Text = 95;
-    public const int TextListener = 96;
-    public const int Time = 97;
-    public const int TimeListener = 98;
-    public const int TimeLoop = 99;
-    public const int TimeMultiplier = 100;
-    public const int TransformMoveVector = 101;
-    public const int TransformPosition = 102;
-    public const int TransformPositionTo = 103;
-    public const int TransformRotation = 104;
-    public const int TransformRotationTo = 105;
-    public const int UnloadAssetsByLabel = 106;
-    public const int Vector3Value = 107;
-    public const int Velocity = 108;
-    public const int VelocityListener = 109;
-    public const int VelocityMax = 110;
-    public const int VelocityMin = 111;
-    public const int VelocityModifier = 112;
-    public const int VelocityVector = 113;
+    public const int ColorListener = 11;
+    public const int ColorPublisher = 12;
+    public const int ColorSubscriber = 13;
+    public const int ComponentDataContainer = 14;
+    public const int ComponentDataContainerListener = 15;
+    public const int ConfigIndex = 16;
+    public const int ControlledByPlayer = 17;
+    public const int CreatedEntity = 18;
+    public const int CreatorEntity = 19;
+    public const int Destroyed = 20;
+    public const int DestroyedListener = 21;
+    public const int DestroyedPublisher = 22;
+    public const int DestroyedSubscriber = 23;
+    public const int DestroyStrategyCreate = 24;
+    public const int DestroyStrategyProcess = 25;
+    public const int EntityList = 26;
+    public const int EntityListListener = 27;
+    public const int EntityListPublisher = 28;
+    public const int EntityListSubscriber = 29;
+    public const int EntityType = 30;
+    public const int FloatModifier = 31;
+    public const int FloatModifierListener = 32;
+    public const int FloatValue = 33;
+    public const int FloatValueListener = 34;
+    public const int FloatValuePublisher = 35;
+    public const int FloatValueSubscriber = 36;
+    public const int GameCreatedEntity = 37;
+    public const int GameObject = 38;
+    public const int GameOwnerTransformChild = 39;
+    public const int GameTarget = 40;
+    public const int Grounded = 41;
+    public const int InputDomainGame = 42;
+    public const int InstantRotation = 43;
+    public const int LoadAssetsByLabel = 44;
+    public const int LoadAssetsOperationCompleted = 45;
+    public const int LoadAssetsOperation = 46;
+    public const int MainCreator = 47;
+    public const int MaxFloatValue = 48;
+    public const int MaxFloatValueListener = 49;
+    public const int MaxFloatValuePublisher = 50;
+    public const int MaxFloatValueSubscriber = 51;
+    public const int Mesh = 52;
+    public const int MeshListener = 53;
+    public const int MinFloatValue = 54;
+    public const int MinFloatValueListener = 55;
+    public const int MoveDistance = 56;
+    public const int MoveDistanceListener = 57;
+    public const int Movement = 58;
+    public const int MovementDirection = 59;
+    public const int MovementListener = 60;
+    public const int MovementStrategyCreate = 61;
+    public const int MovementStrategyProcess = 62;
+    public const int NextFrameDestroy = 63;
+    public const int Owner = 64;
+    public const int OwnerEntityConfigIndexKey = 65;
+    public const int OwnerEntityTypeIndexKey = 66;
+    public const int Point = 67;
+    public const int PointListener = 68;
+    public const int PointPublisher = 69;
+    public const int PointSubscriber = 70;
+    public const int Prefab = 71;
+    public const int RootCanvasChild = 72;
+    public const int RootOwner = 73;
+    public const int Rotation = 74;
+    public const int ScaleVector = 75;
+    public const int ScaleVectorListener = 76;
+    public const int SceneConfig = 77;
+    public const int SceneLoaded = 78;
+    public const int SceneLoadingProcess = 79;
+    public const int SceneLoadMode = 80;
+    public const int SceneLoadProgress = 81;
+    public const int SecondFloatValue = 82;
+    public const int SecondFloatValueListener = 83;
+    public const int Services = 84;
+    public const int SmoothRotation = 85;
+    public const int SmoothRotationSpeed = 86;
+    public const int Sprite = 87;
+    public const int SpriteListener = 88;
+    public const int StartTime = 89;
+    public const int StartTimeListener = 90;
+    public const int StrategyCreate = 91;
+    public const int StrategyProcess = 92;
+    public const int TargetEntityConfig = 93;
+    public const int TargetEntityListMember = 94;
+    public const int TargetMainCreator = 95;
+    public const int TargetPublisher = 96;
+    public const int TargetSubscriber = 97;
+    public const int Text = 98;
+    public const int TextListener = 99;
+    public const int Time = 100;
+    public const int TimeListener = 101;
+    public const int TimeLoop = 102;
+    public const int TimeMultiplier = 103;
+    public const int TransformMoveVector = 104;
+    public const int TransformPosition = 105;
+    public const int TransformPositionTo = 106;
+    public const int TransformRotation = 107;
+    public const int TransformRotationTo = 108;
+    public const int UnloadAssetsByLabel = 109;
+    public const int Vector3Value = 110;
+    public const int Velocity = 111;
+    public const int VelocityListener = 112;
+    public const int VelocityMax = 113;
+    public const int VelocityMin = 114;
+    public const int VelocityModifier = 115;
+    public const int VelocityVector = 116;
 
-    public const int TotalComponents = 114;
+    public const int TotalComponents = 117;
 
     public static readonly string[] componentNames = {
         "Acceleration",
@@ -137,6 +140,9 @@ public static class GameComponentsLookup {
         "ChildTransformByConfig",
         "ColliderHit",
         "Color",
+        "ColorListener",
+        "ColorPublisher",
+        "ColorSubscriber",
         "ComponentDataContainer",
         "ComponentDataContainerListener",
         "ConfigIndex",
@@ -254,6 +260,9 @@ public static class GameComponentsLookup {
         typeof(ChildTransformByConfigComponent),
         typeof(ColliderHitComponent),
         typeof(ColorComponent),
+        typeof(ColorListenerComponent),
+        typeof(ColorPublisherComponent),
+        typeof(ColorSubscriberComponent),
         typeof(ComponentDataContainerComponent),
         typeof(ComponentDataContainerListenerComponent),
         typeof(ConfigIndexComponent),
