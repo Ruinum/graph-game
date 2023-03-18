@@ -52,7 +52,7 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: 5|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
@@ -111,8 +111,62 @@ MonoBehaviour:
       Entry: 7
       Data: 9|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
+      Entry: 6
+      Data: 
+    - Name: Strategy
       Entry: 7
-      Data: 10|Ruinum.ECS.Core.Conditions.NegateCondition, Assembly-CSharp
+      Data: 10|Ruinum.ECS.Core.Configurations.Game.Strategies.ColorEntityStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Target
+      Entry: 7
+      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: ColorStrategy
+      Entry: 7
+      Data: 12|Ruinum.ECS.Core.Configurations.Game.Strategies.SimpleColorStrategy,
+        Assembly-CSharp
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.0263733864
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
+    - Name: Condition
+      Entry: 7
+      Data: 14|Ruinum.ECS.Core.Conditions.NegateCondition, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
@@ -127,14 +181,14 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 11|Ruinum.ECS.Core.Configurations.Game.Strategies.ColorEntityStrategy,
+      Data: 15|Ruinum.ECS.Core.Configurations.Game.Strategies.ColorEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+      Data: 16|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -144,7 +198,7 @@ MonoBehaviour:
       Data: 
     - Name: ColorStrategy
       Entry: 7
-      Data: 13|Ruinum.ECS.Core.Configurations.Game.Strategies.SimpleColorStrategy,
+      Data: 17|Ruinum.ECS.Core.Configurations.Game.Strategies.SimpleColorStrategy,
         Assembly-CSharp
     - Name: Color
       Entry: 7
@@ -187,7 +241,7 @@ MonoBehaviour:
       Data: 
     - Name: Target
       Entry: 7
-      Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5

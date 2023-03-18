@@ -50,7 +50,23 @@ MonoBehaviour:
       Entry: 7
       Data: 3|PrefabComponent, Assembly-CSharp
     - Name: Reference
+      Entry: 7
+      Data: 4|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectName
       Entry: 6
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 6
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -66,7 +82,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+      Data: 5|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
     - Name: _id
       Entry: 1
       Data: 40d2b0c8-666e-4ff1-b147-8f75fa48a303
@@ -78,39 +94,25 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 5|PrefabComponent, Assembly-CSharp
+      Data: 6|PrefabComponent, Assembly-CSharp
     - Name: Reference
+      Entry: 7
+      Data: 7|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectName
       Entry: 6
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: IsUnrelated
-      Entry: 5
-      Data: false
-    - Name: IsTypeChanged
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
-    - Name: _id
-      Entry: 1
-      Data: d13cf42b-c4c8-49c6-868d-052b18d33ebd
-    - Name: Name
-      Entry: 1
-      Data: Theatre
-    - Name: ObjectType
-      Entry: 9
-      Data: 2
-    - Name: Value
-      Entry: 7
-      Data: 7|PrefabComponent, Assembly-CSharp
-    - Name: Reference
+    - Name: m_SubObjectType
       Entry: 6
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -129,10 +131,10 @@ MonoBehaviour:
       Data: 8|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
     - Name: _id
       Entry: 1
-      Data: 5c45cce7-ef11-42d5-8205-fa86ce8b0d97
+      Data: d13cf42b-c4c8-49c6-868d-052b18d33ebd
     - Name: Name
       Entry: 1
-      Data: House
+      Data: Theatre
     - Name: ObjectType
       Entry: 9
       Data: 2
@@ -140,7 +142,23 @@ MonoBehaviour:
       Entry: 7
       Data: 9|PrefabComponent, Assembly-CSharp
     - Name: Reference
+      Entry: 7
+      Data: 10|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectName
       Entry: 6
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 6
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -156,7 +174,53 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+      Data: 11|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
+    - Name: _id
+      Entry: 1
+      Data: 5c45cce7-ef11-42d5-8205-fa86ce8b0d97
+    - Name: Name
+      Entry: 1
+      Data: House
+    - Name: ObjectType
+      Entry: 9
+      Data: 2
+    - Name: Value
+      Entry: 7
+      Data: 12|PrefabComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 7
+      Data: 13|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectName
+      Entry: 6
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 6
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: IsUnrelated
+      Entry: 5
+      Data: false
+    - Name: IsTypeChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
     - Name: _id
       Entry: 1
       Data: 5325dc76-75fd-46d7-a4f9-8a5af1785781
@@ -168,9 +232,25 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 11|PrefabComponent, Assembly-CSharp
+      Data: 15|PrefabComponent, Assembly-CSharp
     - Name: Reference
+      Entry: 7
+      Data: 16|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectName
       Entry: 6
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 6
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
