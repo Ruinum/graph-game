@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: MoneyAmountUI
+  m_Name: HappinessAmountUI
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 012af14456a1347d9b7384f12d4a6275, type: 2}
+    - {fileID: 11400000, guid: 7710767cd93474e519c501d7ca2e35ee, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -70,41 +70,21 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.SimpleStringTextStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Value
-      Entry: 1
-      Data: $
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.StringFloatTextStrategy,
+      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.StringFloatTextStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategy
       Entry: 7
-      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
+      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -121,6 +101,16 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 7
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.SimpleStringTextStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Value
+      Entry: 1
+      Data: '%'
     - Name: 
       Entry: 8
       Data: 
@@ -141,14 +131,7 @@ MonoBehaviour:
       Data: 
     - Name: Target
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.ContextTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 7
-      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.Configs.SimpleEntityConfigStrategy,
+      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -163,18 +146,15 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
       Entry: 7
-      Data: 14|PrefabComponent, Assembly-CSharp
+      Data: 12|PrefabComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 15|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+      Data: 13|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
         Assembly-CSharp]], Assembly-CSharp
     - Name: m_AssetGUID
       Entry: 1
-      Data: 6b7048f23e6d5449e8a167bce34744c7
+      Data: a66918e3cca304a8899c20a76a11afcf
     - Name: m_SubObjectName
       Entry: 1
       Data: 
@@ -192,13 +172,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 16|RootCanvasChildComponent, Assembly-CSharp
+      Data: 14|RootCanvasChildComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 17|TextComponent, Assembly-CSharp
+      Data: 15|TextComponent, Assembly-CSharp
     - Name: Value
       Entry: 1
       Data: 0

@@ -17,6 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 2f198684669ee6f45ba3d5ae458cdfe5, type: 2}
+    - {fileID: 11400000, guid: 574360e288c388c438d6da527c029040, type: 2}
     - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -111,8 +112,8 @@ MonoBehaviour:
       Entry: 7
       Data: 9|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 1
     - Name: Strategy
       Entry: 7
       Data: 10|Ruinum.ECS.Core.Configurations.Game.Strategies.ColorEntityStrategy,
@@ -139,13 +140,13 @@ MonoBehaviour:
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 1
+      Data: 0.3490566
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.3490566
     - Name: 
       Entry: 4
-      Data: 0.0263733864
+      Data: 0.3490566
     - Name: 
       Entry: 4
       Data: 1
@@ -248,7 +249,7 @@ MonoBehaviour:
       Data: false
     - Name: Config
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
