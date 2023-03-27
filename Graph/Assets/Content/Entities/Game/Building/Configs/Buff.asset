@@ -26,7 +26,31 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|ColorComponent, Assembly-CSharp
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
       Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0.230672121
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -34,4 +58,4 @@ MonoBehaviour:
       Entry: 8
       Data: 
   Nested:
-  - {fileID: 11400000, guid: b56b1e5742fabee4095cdff75596e78c, type: 2}
+  - {fileID: 11400000, guid: d9e6d16090a01fc449e3cb5195d60e92, type: 2}

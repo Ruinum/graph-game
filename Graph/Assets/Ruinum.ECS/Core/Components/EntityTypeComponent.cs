@@ -1,6 +1,6 @@
 ﻿using Ruinum.ECS.Configurations.Game.Indexes;
 
-[Game]
+[Game][EditorComponent]
 public class EntityTypeComponent : ValueComponent<EntityTypeConfig>
 {
     
