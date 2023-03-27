@@ -33,4 +33,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Nested: []
+  Nested:
+  - {fileID: 11400000, guid: b56b1e5742fabee4095cdff75596e78c, type: 2}

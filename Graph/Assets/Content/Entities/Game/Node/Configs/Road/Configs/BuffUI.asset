@@ -27,7 +27,7 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 7
       Data: 1|ChildTransformByConfigComponent, Assembly-CSharp
@@ -39,10 +39,34 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|PrefabComponent, Assembly-CSharp
+      Data: 2|ColorComponent, Assembly-CSharp
+    - Name: Color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|PrefabComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 3|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
+      Data: 4|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
         Assembly-CSharp]], Assembly-CSharp
     - Name: m_AssetGUID
       Entry: 1
