@@ -96,11 +96,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
-  - m_GUID: 1a0f0aa8edb34114eb5978cc10343ea8
-    m_Address: Cube
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Preload
   - m_GUID: af4d6044967570242adc67bee888aac3
     m_Address: BuffDebuffUI
     m_ReadOnly: 0

@@ -26,7 +26,16 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|FloatValueComponent, Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -40,3 +49,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3a51e8c7647de4d9bace5687bfcf0f6a, type: 2}
   - {fileID: 11400000, guid: 7710767cd93474e519c501d7ca2e35ee, type: 2}
   - {fileID: 11400000, guid: 3569ce82f9e4144488da9570ef1bbcd9, type: 2}
+  - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
