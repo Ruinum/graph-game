@@ -17,3 +17,5 @@ MonoBehaviour:
   SceneNames:
   - Name: SampleScene
     Config: {fileID: 11400000, guid: e40070ba2a060df43be41c21a7495286, type: 2}
+  - Name: Menu
+    Config: {fileID: 11400000, guid: 8c385bae3da5a9244bdbe6f2dbf49a8c, type: 2}
