@@ -15,7 +15,9 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: cbd62cb4483a8ae4380bebc517a6ec66, type: 2}
+    - {fileID: 11400000, guid: eab9ce4cec696874aba7eebab0de4b3f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -26,7 +28,7 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|PrefabComponent, Assembly-CSharp
@@ -46,6 +48,58 @@ MonoBehaviour:
     - Name: m_EditorAssetChanged
       Entry: 5
       Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|StrategyCreateComponent, Assembly-CSharp
+    - Name: Strategy
+      Entry: 7
+      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabEntityStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Target
+      Entry: 7
+      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Strategy
+      Entry: 7
+      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabDataContainerStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Target
+      Entry: 10
+      Data: 0
+    - Name: DataType
+      Entry: 7
+      Data: 7|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[PrefabComponent,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: DataTypeConfig
+      Entry: 10
+      Data: 1
+    - Name: Id
+      Entry: 1
+      Data: 5325dc76-75fd-46d7-a4f9-8a5af1785781
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 

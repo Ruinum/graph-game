@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 981a70cbc3610ae43900a80f6b7a4e41, type: 3}
-  m_Name: GetPlayerHappinesAmountTargetStrategy
+  m_Name: PlayerHappinesAmountTargetStrategy
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

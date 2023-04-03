@@ -17,7 +17,7 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 9a088c2874928464b80e29af5335f94a, type: 2}
-    - {fileID: 11400000, guid: 863a3ccb66dc0654ba5c9a7ba064219a, type: 2}
+    - {fileID: 11400000, guid: cbd62cb4483a8ae4380bebc517a6ec66, type: 2}
     - {fileID: 11400000, guid: eab9ce4cec696874aba7eebab0de4b3f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -203,21 +203,11 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: Target
-      Entry: 7
-      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Config
       Entry: 10
       Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: DataType
       Entry: 7
-      Data: 19|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[PrefabComponent,
+      Data: 18|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[PrefabComponent,
         Assembly-CSharp]], Assembly-CSharp
     - Name: DataTypeConfig
       Entry: 10
@@ -248,7 +238,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 20|TextComponent, Assembly-CSharp
+      Data: 19|TextComponent, Assembly-CSharp
     - Name: Value
       Entry: 1
       Data: Barracks
