@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: MoneyAmount
+  m_Name: BuildingCost
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,13 +26,40 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 4
     - Name: 
       Entry: 7
-      Data: 1|FloatValueComponent, Assembly-CSharp
+      Data: 1|FloatModifierComponent, Assembly-CSharp
     - Name: Value
       Entry: 4
-      Data: 100
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|FloatValueComponent, Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|MaxFloatValueComponent, Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|MinFloatValueComponent, Assembly-CSharp
+    - Name: Value
+      Entry: 4
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
