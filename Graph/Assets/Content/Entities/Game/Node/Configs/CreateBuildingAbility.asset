@@ -227,9 +227,12 @@ MonoBehaviour:
       Data: 
     - Name: Modifier
       Entry: 7
-      Data: 22|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.TargetValueModifierStrategy,
+      Data: 22|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
         Assembly-CSharp
-    - Name: Value
+    - Name: Modifier
+      Entry: 3
+      Data: 1
+    - Name: ModifierValueStrategy
       Entry: 7
       Data: 23|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
         Assembly-CSharp
@@ -298,9 +301,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Modifier
-      Entry: 3
-      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -442,9 +442,12 @@ MonoBehaviour:
       Data: 
     - Name: Modifier
       Entry: 7
-      Data: 41|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.TargetValueModifierStrategy,
+      Data: 41|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
         Assembly-CSharp
-    - Name: Value
+    - Name: Modifier
+      Entry: 3
+      Data: 1
+    - Name: ModifierValueStrategy
       Entry: 7
       Data: 42|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.TargetMaxFloatValueStrategy,
         Assembly-CSharp
@@ -513,9 +516,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Modifier
-      Entry: 3
-      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -657,9 +657,12 @@ MonoBehaviour:
       Data: 
     - Name: Modifier
       Entry: 7
-      Data: 60|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.TargetValueModifierStrategy,
+      Data: 60|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
         Assembly-CSharp
-    - Name: Value
+    - Name: Modifier
+      Entry: 3
+      Data: 1
+    - Name: ModifierValueStrategy
       Entry: 7
       Data: 61|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.TargetMinFloatValueStrategy,
         Assembly-CSharp
@@ -728,9 +731,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Modifier
-      Entry: 3
-      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -872,9 +872,12 @@ MonoBehaviour:
       Data: 
     - Name: Modifier
       Entry: 7
-      Data: 79|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.TargetValueModifierStrategy,
+      Data: 79|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.Modifiers.SimpleModifierStrategy,
         Assembly-CSharp
-    - Name: Value
+    - Name: Modifier
+      Entry: 3
+      Data: 1
+    - Name: ModifierValueStrategy
       Entry: 7
       Data: 80|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.TargetFloatModifierStrategy,
         Assembly-CSharp
@@ -943,9 +946,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Modifier
-      Entry: 3
-      Data: 1
     - Name: 
       Entry: 8
       Data: 
