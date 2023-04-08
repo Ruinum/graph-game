@@ -102,11 +102,19 @@ MonoBehaviour:
     m_SerializedLabels:
     - Preload
   - m_GUID: 2a05dff05a7b02841ad9d4e93d349394
-    m_Address: Assets/Content/Scenes/Menu.unity
+    m_Address: Menu
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: d46510fb00057a541bd2a0887805db78
-    m_Address: Assets/Content/Scenes/Level 1.unity
+    m_Address: Level 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8ba3b822661401429bfbabedcf885ec
+    m_Address: Level 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1b4cec813bd63be4dbb38ca296e0bee1
+    m_Address: Level 3
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
