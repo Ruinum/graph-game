@@ -16,6 +16,7 @@ public sealed class GameEventSystems : Feature {
         Add(new FloatValueEventSystem(contexts)); // priority: 0
         Add(new MaxFloatValueEventSystem(contexts)); // priority: 0
         Add(new MeshEventSystem(contexts)); // priority: 0
+        Add(new MeshGameObjectEventSystem(contexts)); // priority: 0
         Add(new MinFloatValueEventSystem(contexts)); // priority: 0
         Add(new MoveDistanceEventSystem(contexts)); // priority: 0
         Add(new MovementEventSystem(contexts)); // priority: 0

@@ -13,6 +13,7 @@ namespace Ruinum.ECS.Systems.Features
             Add(new GameOwnerTransformChildSystem(contexts.game));
             Add(new TransformChildByConfigSystem(contexts.game, services.EntityIndex));
             Add(new ColorPublisherSubscriberSystem(contexts.game));
+            Add(new MeshSystem(contexts.game, services.Asset));
         }
     }
 }

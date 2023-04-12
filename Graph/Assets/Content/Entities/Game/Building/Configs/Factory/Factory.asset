@@ -29,7 +29,7 @@ MonoBehaviour:
       Data: 0|Entitas.IComponent[], Entitas
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|ColorComponent, Assembly-CSharp
@@ -56,50 +56,74 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|StrategyCreateComponent, Assembly-CSharp
+      Data: 2|MeshComponent, Assembly-CSharp
+    - Name: Reference
+      Entry: 7
+      Data: 3|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
+    - Name: m_AssetGUID
+      Entry: 1
+      Data: af10d74a1910bbb4db3f6fa517ecbeaa
+    - Name: m_SubObjectName
+      Entry: 1
+      Data: 
+    - Name: m_SubObjectType
+      Entry: 1
+      Data: 
+    - Name: m_EditorAssetChanged
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|StrategyCreateComponent, Assembly-CSharp
     - Name: Strategy
       Entry: 7
-      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
+      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategies
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
+      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.Targets.ProcessTargetAllEntityStrategy,
+      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.ProcessTargetAllEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategy
       Entry: 7
-      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.ChainTargetAllStrategy,
+      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.ChainTargetAllStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategies
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.ITargetAllStrategy[],
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.ITargetAllStrategy[],
         Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.EntityListTargetAllStrategy,
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.EntityListTargetAllStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
+      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -112,14 +136,14 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy,
+      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: OwnerStrategy
       Entry: 7
-      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -129,21 +153,21 @@ MonoBehaviour:
       Data: 
     - Name: FilteredConfigs
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData[],
+      Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData,
+      Data: 15|Ruinum.ECS.Configurations.Game.Strategies.Targets.All.CreateEntitiesTargetAllStrategy+ConfigData,
         Assembly-CSharp
     - Name: Config
       Entry: 10
       Data: 0
     - Name: ProcessData
       Entry: 7
-      Data: 14|Ruinum.ECS.Configurations.Game.CreateStrategies.TargetToCreatedStrategyData[],
+      Data: 16|Ruinum.ECS.Configurations.Game.CreateStrategies.TargetToCreatedStrategyData[],
         Assembly-CSharp
     - Name: 
       Entry: 12
@@ -180,14 +204,14 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 15|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabEntityStrategy,
+      Data: 17|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 16|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
+      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -197,7 +221,7 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 17|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabDataContainerStrategy,
+      Data: 19|Ruinum.ECS.Configurations.Game.Strategies.Prefab.PrefabDataContainerStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -207,7 +231,7 @@ MonoBehaviour:
       Data: 1
     - Name: DataType
       Entry: 7
-      Data: 18|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[PrefabComponent,
+      Data: 20|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[PrefabComponent,
         Assembly-CSharp]], Assembly-CSharp
     - Name: DataTypeConfig
       Entry: 10
@@ -238,7 +262,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 19|TextComponent, Assembly-CSharp
+      Data: 21|TextComponent, Assembly-CSharp
     - Name: Value
       Entry: 1
       Data: Factory

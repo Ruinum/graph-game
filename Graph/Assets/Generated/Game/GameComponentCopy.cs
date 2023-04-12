@@ -80,6 +80,8 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
                 ReplaceMaxFloatValueSubscriber(newMaxFloatValueSubscriber.Strategy,newMaxFloatValueSubscriber.Target); 
                 return;
             case GameComponentsLookup.Mesh: ReplaceMesh(((MeshComponent) fromComponent).Reference); return;
+            case GameComponentsLookup.MeshGameObject: ReplaceMeshGameObject(((MeshGameObjectComponent) fromComponent).Value); return;
+            case GameComponentsLookup.MeshGameObjectListener: ReplaceMeshGameObjectListener(((MeshGameObjectListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.MeshListener: ReplaceMeshListener(((MeshListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.MinFloatValue: ReplaceMinFloatValue(((MinFloatValueComponent) fromComponent).Value); return;
             case GameComponentsLookup.MinFloatValueListener: ReplaceMinFloatValueListener(((MinFloatValueListenerComponent) fromComponent).value); return;
