@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fa00e883df5e8438a32c1f57f42a24, type: 3}
+  m_Name: BuildingCostType
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _dataType
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Ruinum.ECS.Configurations.Components.ComponentDataType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 1|Ruinum.ECS.Configurations.Components.ComponentDataType, Assembly-CSharp
+    - Name: Id
+      Entry: 1
+      Data: 51086b84-04f3-4694-bb91-c604beab5025
+    - Name: Name
+      Entry: 1
+      Data: House
+    - Name: DataType
+      Entry: 7
+      Data: 2|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: FloatComponentData, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Ruinum.ECS.Configurations.Components.ComponentDataType, Assembly-CSharp
+    - Name: Id
+      Entry: 1
+      Data: fb9e1c00-daa4-4bfe-b37d-3f6876be171a
+    - Name: Name
+      Entry: 1
+      Data: Barracks
+    - Name: DataType
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Ruinum.ECS.Configurations.Components.ComponentDataType, Assembly-CSharp
+    - Name: Id
+      Entry: 1
+      Data: 6853e91c-a00e-40f1-bbfe-344a97beea4e
+    - Name: Name
+      Entry: 1
+      Data: Factory
+    - Name: DataType
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Ruinum.ECS.Configurations.Components.ComponentDataType, Assembly-CSharp
+    - Name: Id
+      Entry: 1
+      Data: 80e91d94-2f19-45ac-95ee-41f6e148539c
+    - Name: Name
+      Entry: 1
+      Data: Theater
+    - Name: DataType
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|Ruinum.ECS.Configurations.Components.ComponentDataType, Assembly-CSharp
+    - Name: Id
+      Entry: 1
+      Data: 0d726370-44eb-45f1-8859-b7589393ab17
+    - Name: Name
+      Entry: 1
+      Data: Demolish
+    - Name: DataType
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

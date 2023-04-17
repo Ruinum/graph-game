@@ -167,16 +167,13 @@ MonoBehaviour:
       Data: 13|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
       Entry: 7
-      Data: 14|Ruinum.ECS.Core.Conditions.NegateCondition, Assembly-CSharp
+      Data: 14|Ruinum.ECS.Core.Conditions.TrueCondition, Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Negate
       Entry: 5
       Data: false
-    - Name: Condition
-      Entry: 10
-      Data: 0
     - Name: 
       Entry: 8
       Data: 

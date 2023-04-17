@@ -17,8 +17,6 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: aeb6d375364603f499629a31349307c0, type: 2}
-    - {fileID: 11400000, guid: cbd62cb4483a8ae4380bebc517a6ec66, type: 2}
-    - {fileID: 11400000, guid: eab9ce4cec696874aba7eebab0de4b3f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -92,7 +90,7 @@ MonoBehaviour:
       Data: 6|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.ProcessTargetAllEntityStrategy,
@@ -278,4 +276,3 @@ MonoBehaviour:
   Nested:
   - {fileID: 11400000, guid: ef5641a7dfec446e99ff6f94d3f2b19c, type: 2}
   - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}
-  - {fileID: 11400000, guid: 8b80d869fac81494d90eaa2f3c5003c0, type: 2}

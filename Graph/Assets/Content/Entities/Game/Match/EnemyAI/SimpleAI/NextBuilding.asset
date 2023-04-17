@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: BuildingCost
+  m_Name: NextBuilding
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 447d778a46cc6074492e92c7ac3d8581, type: 2}
+    - {fileID: 11400000, guid: bbd09a1c3a613c746a2ad452dc2d09da, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,13 +30,10 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 7
-      Data: 1|ComponentDataContainerComponent, Assembly-CSharp
+      Data: 1|TargetEntityConfigComponent, Assembly-CSharp
     - Name: Value
       Entry: 10
       Data: 0
-    - Name: _dataType
-      Entry: 6
-      Data: 
     - Name: 
       Entry: 8
       Data: 

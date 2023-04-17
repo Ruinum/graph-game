@@ -18,8 +18,9 @@ MonoBehaviour:
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 5405ad9bf74f344d783d17d1087e987a, type: 2}
     - {fileID: 11400000, guid: c13aaf998758f1644a7d3958e427d49f, type: 2}
-    - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
+    - {fileID: 11400000, guid: ec233dadf3928b241a5086eee5c4cfd2, type: 2}
     - {fileID: 11400000, guid: c0707a48094e4fa49bd06f37fc5eba48, type: 2}
+    - {fileID: 11400000, guid: c82dfbea025036840a769027b23208e7, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -141,12 +142,12 @@ MonoBehaviour:
       Data: 0
     - Name: ModifierValueStrategy
       Entry: 7
-      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.SecondFloatValueStrategy,
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueDataContainerStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
-    - Name: TargetStrategy
+    - Name: Target
       Entry: 7
       Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
         Assembly-CSharp
@@ -159,37 +160,17 @@ MonoBehaviour:
         Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 7
       Data: 16|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
-      Data: false
-    - Name: Config
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 17|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 18|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
+      Data: true
     - Name: Config
       Entry: 10
       Data: 3
@@ -202,6 +183,19 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DataType
+      Entry: 7
+      Data: 17|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[FloatComponentData,
+        Assembly-CSharp]], Assembly-CSharp
+    - Name: DataTypeConfig
+      Entry: 10
+      Data: 4
+    - Name: Id
+      Entry: 1
+      Data: 0d726370-44eb-45f1-8859-b7589393ab17
     - Name: 
       Entry: 8
       Data: 

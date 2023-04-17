@@ -44,7 +44,6 @@ namespace Ruinum.ECS.Configurations.Game.Strategies
                 data = default;
                 return false;
             }
-            data = default;
             return true;
         }
     }

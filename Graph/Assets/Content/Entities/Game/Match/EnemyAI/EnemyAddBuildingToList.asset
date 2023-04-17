@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c9d78734015a741930b77634b38a30, type: 3}
-  m_Name: Player
+  m_Name: EnemyAddBuildingToList
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
+    - {fileID: 11400000, guid: eddaf25651c5a3b4d9bacaf2b3b57275, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,10 +30,7 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 7
-      Data: 1|FloatValueComponent, Assembly-CSharp
-    - Name: Value
-      Entry: 4
-      Data: 1
+      Data: 1|NextFrameDestroyComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -42,14 +39,36 @@ MonoBehaviour:
       Data: 2|StrategyCreateComponent, Assembly-CSharp
     - Name: Strategy
       Entry: 7
-      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueEntityStrategy,
+      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Strategies
+      Entry: 7
+      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.Targets.ReplaceTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Strategy
+      Entry: 7
+      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -60,27 +79,21 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Strategy
-      Entry: 7
-      Data: 5|Ruinum.ECS.Configurations.Game.Strategies.Subscribers.Values.FloatValueStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: TargetStrategy
-      Entry: 7
-      Data: 6|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
     - Name: 
       Entry: 8
       Data: 
     - Name: 
-      Entry: 8
-      Data: 
-    - Name: CheckEquality
+      Entry: 7
+      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.EntityListMemberEntityStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Target
+      Entry: 7
+      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+        Assembly-CSharp
+    - Name: Logging
       Entry: 5
       Data: false
     - Name: 
@@ -95,13 +108,16 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  Nested:
-  - {fileID: 11400000, guid: 012af14456a1347d9b7384f12d4a6275, type: 2}
-  - {fileID: 11400000, guid: b8ab14c77adf64bc5be56b668c84bf95, type: 2}
-  - {fileID: 11400000, guid: cc5b24d10887a4e529d2f91cd5be882f, type: 2}
-  - {fileID: 11400000, guid: 3a51e8c7647de4d9bace5687bfcf0f6a, type: 2}
-  - {fileID: 11400000, guid: 7710767cd93474e519c501d7ca2e35ee, type: 2}
-  - {fileID: 11400000, guid: 3569ce82f9e4144488da9570ef1bbcd9, type: 2}
-  - {fileID: 11400000, guid: 080413ea19d95a34890560307c31f898, type: 2}
-  - {fileID: 11400000, guid: 863a3ccb66dc0654ba5c9a7ba064219a, type: 2}
-  - {fileID: 11400000, guid: c0707a48094e4fa49bd06f37fc5eba48, type: 2}
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  Nested: []
