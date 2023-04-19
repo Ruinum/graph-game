@@ -49,7 +49,7 @@ MonoBehaviour:
       Data: false
     - Name: Target
       Entry: 7
-      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 4|Ruinum.ECS.Configurations.Game.Strategies.Targets.NestedHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5

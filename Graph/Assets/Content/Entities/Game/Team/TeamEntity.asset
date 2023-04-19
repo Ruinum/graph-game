@@ -302,7 +302,8 @@ MonoBehaviour:
       Data: 3
     - Name: Strategy
       Entry: 7
-      Data: 28|Ruinum.ECS.Configurations.Game.Strategies.ChainStrategy, Assembly-CSharp
+      Data: 28|Ruinum.ECS.Configurations.Game.Strategies.ChainFreeResultStrategy,
+        Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
