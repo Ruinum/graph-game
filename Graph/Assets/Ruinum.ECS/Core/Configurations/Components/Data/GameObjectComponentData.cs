@@ -1,8 +1,7 @@
 ﻿using Sirenix.OdinInspector;
-using UnityEngine;
-
+using UnityEngine.AddressableAssets;
 
 public sealed class GameObjectComponentData : IComponentData
 {
-    [HideReferenceObjectPicker, HideLabel, AssetsOnly] public GameObject Reference;
+    [HideReferenceObjectPicker, HideLabel, AssetsOnly] public AssetReferenceGameObject Reference;
 }
