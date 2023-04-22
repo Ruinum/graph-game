@@ -42,7 +42,7 @@ MonoBehaviour:
       Data: 2|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: PrefabComponent, Assembly-CSharp
+      Data: MeshComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
