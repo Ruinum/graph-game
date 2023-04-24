@@ -4,7 +4,7 @@ using UnityEngine.AddressableAssets;
 
 namespace Ruinum.ECS.Configurations.Game.Strategies.Mesh
 {
-    public sealed class MeshDataContainerStrategy : DataContainerValueStrategy<GameObjectComponentData>, IMeshStrategy
+    public sealed class MeshDataContainerStrategy : DataContainerValueStrategy<MeshComponent>, IMeshStrategy
     {
         public bool TryGet(GameEntity entity, out AssetReferenceGameObject mesh)
         {

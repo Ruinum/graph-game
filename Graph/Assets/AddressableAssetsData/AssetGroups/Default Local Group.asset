@@ -125,6 +125,11 @@ MonoBehaviour:
     m_Address: Level 5
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 4e26c8e8b3491d8458ca278b00aefc1c
+    m_Address: MushroomWarrior
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:

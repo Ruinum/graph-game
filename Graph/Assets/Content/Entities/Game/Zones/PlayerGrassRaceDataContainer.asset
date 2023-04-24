@@ -54,7 +54,7 @@ MonoBehaviour:
       Data: 4|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: 4e26c8e8b3491d8458ca278b00aefc1c
     - Name: m_SubObjectName
       Entry: 1
       Data: 
@@ -129,10 +129,10 @@ MonoBehaviour:
       Data: 8|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
     - Name: _id
       Entry: 1
-      Data: d13cf42b-c4c8-49c6-868d-052b18d33ebd
+      Data: 5c45cce7-ef11-42d5-8205-fa86ce8b0d97
     - Name: Name
       Entry: 1
-      Data: Theatre
+      Data: House
     - Name: ObjectType
       Entry: 9
       Data: 2
@@ -174,10 +174,10 @@ MonoBehaviour:
       Data: 11|Ruinum.ECS.Configurations.Components.ComponentDataTypeRecord, Assembly-CSharp
     - Name: _id
       Entry: 1
-      Data: 5c45cce7-ef11-42d5-8205-fa86ce8b0d97
+      Data: d13cf42b-c4c8-49c6-868d-052b18d33ebd
     - Name: Name
       Entry: 1
-      Data: House
+      Data: Theatre
     - Name: ObjectType
       Entry: 9
       Data: 2

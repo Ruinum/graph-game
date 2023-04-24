@@ -61,7 +61,7 @@ namespace Ruinum.ECS.Configurations.Game.Strategies
         private bool IsShowStrategyLogging()
         {
 #if UNITY_EDITOR
-            return UnityEditor.EditorPrefs.GetBool(EditorPrefsConstants.ShowStrategyLogging);
+            return true; //UnityEditor.EditorPrefs.GetBool(EditorPrefsConstants.ShowStrategyLogging);
 #else
             return false;
 #endif

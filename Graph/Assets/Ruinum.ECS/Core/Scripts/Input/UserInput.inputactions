@@ -148,6 +148,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LeftRotation",
+                    "type": "Button",
+                    "id": "9896ff8e-27a0-4a7e-9d03-1cf0f62178dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightRotation",
+                    "type": "Button",
+                    "id": "dd5d0e4a-aefc-47a2-a6b4-35a9a1c68d87",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -340,17 +358,6 @@
                 },
                 {
                     "name": "",
-                    "id": "22c7c997-cc6b-4004-a335-08e8f618bc1b",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Alpha3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "06e83129-3664-45f8-9ddc-9b2d42b1c0ee",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -368,6 +375,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f32d76bc-87a2-4fcc-b05e-8f01bffc597b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "22c7c997-cc6b-4004-a335-08e8f618bc1b",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Alpha3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7364320e-078b-4d96-9944-5fe1e6f89485",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightRotation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

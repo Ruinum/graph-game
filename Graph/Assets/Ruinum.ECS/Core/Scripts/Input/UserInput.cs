@@ -170,6 +170,24 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftRotation"",
+                    ""type"": ""Button"",
+                    ""id"": ""9896ff8e-27a0-4a7e-9d03-1cf0f62178dd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightRotation"",
+                    ""type"": ""Button"",
+                    ""id"": ""dd5d0e4a-aefc-47a2-a6b4-35a9a1c68d87"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -362,17 +380,6 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""22c7c997-cc6b-4004-a335-08e8f618bc1b"",
-                    ""path"": ""<Keyboard>/3"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Alpha3"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""06e83129-3664-45f8-9ddc-9b2d42b1c0ee"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
@@ -390,6 +397,39 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f32d76bc-87a2-4fcc-b05e-8f01bffc597b"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""22c7c997-cc6b-4004-a335-08e8f618bc1b"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Alpha3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7364320e-078b-4d96-9944-5fe1e6f89485"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightRotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -444,6 +484,8 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
         m_Game_Alpha1 = m_Game.FindAction("Alpha1", throwIfNotFound: true);
         m_Game_Alpha2 = m_Game.FindAction("Alpha2", throwIfNotFound: true);
         m_Game_Alpha3 = m_Game.FindAction("Alpha3", throwIfNotFound: true);
+        m_Game_LeftRotation = m_Game.FindAction("LeftRotation", throwIfNotFound: true);
+        m_Game_RightRotation = m_Game.FindAction("RightRotation", throwIfNotFound: true);
         // GameSettings
         m_GameSettings = asset.FindActionMap("GameSettings", throwIfNotFound: true);
         m_GameSettings_Esc = m_GameSettings.FindAction("Esc", throwIfNotFound: true);
@@ -522,6 +564,8 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_Game_Alpha1;
     private readonly InputAction m_Game_Alpha2;
     private readonly InputAction m_Game_Alpha3;
+    private readonly InputAction m_Game_LeftRotation;
+    private readonly InputAction m_Game_RightRotation;
     public struct GameActions
     {
         private @UserInput m_Wrapper;
@@ -542,6 +586,8 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
         public InputAction @Alpha1 => m_Wrapper.m_Game_Alpha1;
         public InputAction @Alpha2 => m_Wrapper.m_Game_Alpha2;
         public InputAction @Alpha3 => m_Wrapper.m_Game_Alpha3;
+        public InputAction @LeftRotation => m_Wrapper.m_Game_LeftRotation;
+        public InputAction @RightRotation => m_Wrapper.m_Game_RightRotation;
         public InputActionMap Get() { return m_Wrapper.m_Game; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -599,6 +645,12 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                 @Alpha3.started -= m_Wrapper.m_GameActionsCallbackInterface.OnAlpha3;
                 @Alpha3.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnAlpha3;
                 @Alpha3.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnAlpha3;
+                @LeftRotation.started -= m_Wrapper.m_GameActionsCallbackInterface.OnLeftRotation;
+                @LeftRotation.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnLeftRotation;
+                @LeftRotation.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnLeftRotation;
+                @RightRotation.started -= m_Wrapper.m_GameActionsCallbackInterface.OnRightRotation;
+                @RightRotation.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnRightRotation;
+                @RightRotation.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnRightRotation;
             }
             m_Wrapper.m_GameActionsCallbackInterface = instance;
             if (instance != null)
@@ -651,6 +703,12 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
                 @Alpha3.started += instance.OnAlpha3;
                 @Alpha3.performed += instance.OnAlpha3;
                 @Alpha3.canceled += instance.OnAlpha3;
+                @LeftRotation.started += instance.OnLeftRotation;
+                @LeftRotation.performed += instance.OnLeftRotation;
+                @LeftRotation.canceled += instance.OnLeftRotation;
+                @RightRotation.started += instance.OnRightRotation;
+                @RightRotation.performed += instance.OnRightRotation;
+                @RightRotation.canceled += instance.OnRightRotation;
             }
         }
     }
@@ -706,6 +764,8 @@ public partial class @UserInput : IInputActionCollection2, IDisposable
         void OnAlpha1(InputAction.CallbackContext context);
         void OnAlpha2(InputAction.CallbackContext context);
         void OnAlpha3(InputAction.CallbackContext context);
+        void OnLeftRotation(InputAction.CallbackContext context);
+        void OnRightRotation(InputAction.CallbackContext context);
     }
     public interface IGameSettingsActions
     {
