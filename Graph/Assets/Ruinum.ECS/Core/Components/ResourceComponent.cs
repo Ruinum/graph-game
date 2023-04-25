@@ -1,7 +1,6 @@
 ﻿using Entitas;
 
 using Ruinum.ECS.Attributes;
-using Ruinum.ECS.Configurations.Components.Data;
 
 using Sirenix.OdinInspector;
 using UnityEngine.AddressableAssets;
