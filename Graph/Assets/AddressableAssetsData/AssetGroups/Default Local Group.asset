@@ -130,6 +130,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
+  - m_GUID: 4542286bb13c766498e253325116f52b
+    m_Address: BarracksType
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: e532cf4bdd22e0745ba8446dbfe0a7e9
+    m_Address: FactoryType
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: 4aab70a438b72ba4d8b7b3c313e3dd0a
+    m_Address: HouseType
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+  - m_GUID: 0b8443777d1eba94bb8bf2053cbbe2d4
+    m_Address: TheaterType
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:

@@ -42,25 +42,24 @@ MonoBehaviour:
       Data: 2|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: PrefabComponent, Assembly-CSharp
+      Data: MeshComponent, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: Value
       Entry: 7
-      Data: 3|PrefabComponent, Assembly-CSharp
+      Data: 3|MeshComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 4|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
+      Data: 4|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: 4542286bb13c766498e253325116f52b
     - Name: m_SubObjectName
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_SubObjectType
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_EditorAssetChanged
       Entry: 5
@@ -94,19 +93,18 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 6|PrefabComponent, Assembly-CSharp
+      Data: 6|MeshComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 7|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
+      Data: 7|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: e532cf4bdd22e0745ba8446dbfe0a7e9
     - Name: m_SubObjectName
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_SubObjectType
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_EditorAssetChanged
       Entry: 5
@@ -140,19 +138,18 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 9|PrefabComponent, Assembly-CSharp
+      Data: 9|MeshComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 10|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
+      Data: 10|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: 0b8443777d1eba94bb8bf2053cbbe2d4
     - Name: m_SubObjectName
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_SubObjectType
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_EditorAssetChanged
       Entry: 5
@@ -186,19 +183,18 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 12|PrefabComponent, Assembly-CSharp
+      Data: 12|MeshComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 13|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
+      Data: 13|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: 4aab70a438b72ba4d8b7b3c313e3dd0a
     - Name: m_SubObjectName
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_SubObjectType
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_EditorAssetChanged
       Entry: 5
@@ -232,19 +228,18 @@ MonoBehaviour:
       Data: 2
     - Name: Value
       Entry: 7
-      Data: 15|PrefabComponent, Assembly-CSharp
+      Data: 15|MeshComponent, Assembly-CSharp
     - Name: Reference
       Entry: 7
-      Data: 16|Ruinum.ECS.Assets.ComponentReference`1[[Ruinum.ECS.Scripts.Entities.Components.Game.GameEntityBehaviour,
-        Assembly-CSharp]], Assembly-CSharp
+      Data: 16|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 
+      Data: 4e26c8e8b3491d8458ca278b00aefc1c
     - Name: m_SubObjectName
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_SubObjectType
-      Entry: 6
+      Entry: 1
       Data: 
     - Name: m_EditorAssetChanged
       Entry: 5

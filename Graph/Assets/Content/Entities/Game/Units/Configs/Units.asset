@@ -147,7 +147,7 @@ MonoBehaviour:
       Data: 
     - Name: DataType
       Entry: 7
-      Data: 12|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[GameObjectComponentData,
+      Data: 12|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[MeshComponent,
         Assembly-CSharp]], Assembly-CSharp
     - Name: DataTypeConfig
       Entry: 10

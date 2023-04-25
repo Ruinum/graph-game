@@ -36,7 +36,7 @@ MonoBehaviour:
       Data: 1|Ruinum.ECS.Configurations.Game.Strategies.IEntityStrategy[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 7
       Data: 2|Ruinum.ECS.Configurations.Game.CreateStrategies.CreateEntityStrategy,
@@ -417,7 +417,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 35|Ruinum.ECS.Configurations.Game.Strategies.Targets.ReplaceTargetStrategy,
+      Data: 35|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionToEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -432,46 +432,16 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: Strategy
-      Entry: 7
-      Data: 37|Ruinum.ECS.Configurations.Game.Strategies.Targets.CurrentEntityTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 38|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionToEntityStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: Target
-      Entry: 7
-      Data: 39|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
-        Assembly-CSharp
-    - Name: Logging
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: Point
       Entry: 7
-      Data: 40|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
+      Data: 37|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 41|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
+      Data: 38|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -487,14 +457,14 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 42|Ruinum.ECS.Configurations.Game.Strategies.Rotation.TransformRotationToEntityStrategy,
+      Data: 39|Ruinum.ECS.Configurations.Game.Strategies.Rotation.TransformRotationToEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 43|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
+      Data: 40|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -504,28 +474,28 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 44|Ruinum.ECS.Configurations.Game.Strategies.Rotation.RotationToDirectionStrategy,
+      Data: 41|Ruinum.ECS.Configurations.Game.Strategies.Rotation.RotationToDirectionStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Vector
       Entry: 7
-      Data: 45|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.DirectionBetweenPointsStrategy,
+      Data: 42|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.DirectionBetweenPointsStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: FromPoint
       Entry: 7
-      Data: 46|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
+      Data: 43|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 47|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
+      Data: 44|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -538,28 +508,28 @@ MonoBehaviour:
       Data: 
     - Name: ToPoint
       Entry: 7
-      Data: 48|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
+      Data: 45|Ruinum.ECS.Configurations.Game.Strategies.VectorStrategies.TransformPositionStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: TargetStrategy
       Entry: 7
-      Data: 49|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
+      Data: 46|Ruinum.ECS.Configurations.Game.Strategies.Targets.ChainDepthTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategies
       Entry: 7
-      Data: 50|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
+      Data: 47|Ruinum.ECS.Configurations.Game.Strategies.Targets.ITargetStrategy[],
         Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
       Entry: 7
-      Data: 51|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
+      Data: 48|Ruinum.ECS.Configurations.Game.Strategies.Targets.CreatedEntityTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -569,7 +539,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 52|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
+      Data: 49|Ruinum.ECS.Configurations.Game.Strategies.Targets.RootOwnerHierarchyTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -582,7 +552,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 53|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+      Data: 50|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
