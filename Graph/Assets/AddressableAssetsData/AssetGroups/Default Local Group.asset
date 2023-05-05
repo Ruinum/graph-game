@@ -150,6 +150,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Preload
+  - m_GUID: 7ee8b5a26563c3e41bfe21f405be29da
+    m_Address: ChoiceFlag
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 005fdaeda950dc2418e408d4ef7c7852, type: 2}
   m_SchemaSet:
