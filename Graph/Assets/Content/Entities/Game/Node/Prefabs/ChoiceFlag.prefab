@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1052765762297191844}
   - component: {fileID: 3669261212950200135}
   - component: {fileID: 2096186866201747234}
+  - component: {fileID: 3190503262526620648}
   m_Layer: 0
   m_Name: ChoiceFlag
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5600680929914357136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.605, y: 31.3443, z: 0}
-  m_LocalScale: {x: 0.23576659, y: 1.0379144, z: 0.5639}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,3 +121,15 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _updateTransform: 0
+--- !u!114 &3190503262526620648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5600680929914357136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcad69e00e411fb4fb2fd7a495e4c4c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
