@@ -1,6 +1,7 @@
 ﻿using Ruinum.ECS.Core.Systems;
 using Ruinum.ECS.Services.Interfaces;
 using Ruinum.ECS.Systems.Assets;
+using Ruinum.ECS.Systems.Audio;
 using Ruinum.ECS.Systems.Destroy;
 using Ruinum.ECS.Systems.Features.Destroy;
 using Ruinum.ECS.Systems.Game;
@@ -21,6 +22,7 @@ namespace Ruinum.ECS.Systems.Features
             Add(new GameSystems(contexts, services));
             Add(new StateSystems(contexts, services));
             Add(new PrefabSystems(contexts, services));
+            Add(new AudioSystem(contexts.game, services.Audio));
 
             Add(new SceneSystems(contexts, services));
 

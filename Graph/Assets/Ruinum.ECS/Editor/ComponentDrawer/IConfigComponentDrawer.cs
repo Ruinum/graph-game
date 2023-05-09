@@ -1,7 +1,6 @@
 ﻿using System;
 using Entitas;
 
-
 namespace Ruinum.ECS.Editor.ComponentDrawer
 {
     public interface IConfigComponentDrawer

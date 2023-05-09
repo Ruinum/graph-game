@@ -32,7 +32,8 @@ namespace Ruinum.ECS
                 new EntityIndexService(Contexts.sharedInstance),
                 new LoaderService(),
                 new SceneService(),
-                new InputService(_input));
+                new InputService(_input),
+                new AudioService());
 
             _systems = new Feature("Empty");
 

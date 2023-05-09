@@ -4,6 +4,7 @@
     {
         IConfigService Config { get; }
         IAssetService Asset { get; }
+        IAudioService Audio { get; }
         ILoaderService Loader { get; }
         IEntityIndexService EntityIndex { get; }
         ISceneService Scene { get; }
