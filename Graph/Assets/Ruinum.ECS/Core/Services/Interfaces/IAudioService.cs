@@ -1,7 +1,9 @@
-﻿namespace Ruinum.ECS.Services.Interfaces
+﻿using UnityEngine;
+
+namespace Ruinum.ECS.Services.Interfaces
 {
     public interface IAudioService
     {
-        void PlayAudio(GameEntity entity, AudioConfigComponent audio, AudioTargetComponent audioTarget);
+        bool TryPlayAudio(GameEntity entity, AudioConfigComponent audio, AudioTargetComponent audioTarget, out AudioSource audioSource);
     }
 }

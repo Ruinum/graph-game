@@ -98,6 +98,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.Owner: ReplaceOwner(((OwnerComponent) fromComponent).Value); return;
             case GameComponentsLookup.OwnerEntityConfigIndexKey: ReplaceOwnerEntityConfigIndexKey(((OwnerEntityConfigIndexKeyComponent) fromComponent).Value); return;
             case GameComponentsLookup.OwnerEntityTypeIndexKey: ReplaceOwnerEntityTypeIndexKey(((OwnerEntityTypeIndexKeyComponent) fromComponent).Value); return;
+            case GameComponentsLookup.PlayableAudio: ReplacePlayableAudio(((PlayableAudioComponent) fromComponent).Source); return;
             case GameComponentsLookup.Point: ReplacePoint(((PointComponent) fromComponent).Value); return;
             case GameComponentsLookup.PointListener: ReplacePointListener(((PointListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.PointPublisher: ReplacePointPublisher(((PointPublisherComponent) fromComponent).Subscribers); return;

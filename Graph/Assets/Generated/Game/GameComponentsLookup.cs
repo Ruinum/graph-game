@@ -79,58 +79,59 @@ public static class GameComponentsLookup {
     public const int Owner = 68;
     public const int OwnerEntityConfigIndexKey = 69;
     public const int OwnerEntityTypeIndexKey = 70;
-    public const int Point = 71;
-    public const int PointListener = 72;
-    public const int PointPublisher = 73;
-    public const int PointSubscriber = 74;
-    public const int Prefab = 75;
-    public const int RootCanvasChild = 76;
-    public const int RootOwner = 77;
-    public const int Rotation = 78;
-    public const int ScaleVector = 79;
-    public const int ScaleVectorListener = 80;
-    public const int SceneConfig = 81;
-    public const int SceneLoaded = 82;
-    public const int SceneLoadingProcess = 83;
-    public const int SceneLoadMode = 84;
-    public const int SceneLoadProgress = 85;
-    public const int SecondFloatValue = 86;
-    public const int SecondFloatValueListener = 87;
-    public const int Services = 88;
-    public const int SmoothRotation = 89;
-    public const int SmoothRotationSpeed = 90;
-    public const int Sprite = 91;
-    public const int SpriteListener = 92;
-    public const int StartTime = 93;
-    public const int StartTimeListener = 94;
-    public const int StrategyCreate = 95;
-    public const int StrategyProcess = 96;
-    public const int TargetEntityConfig = 97;
-    public const int TargetEntityListMember = 98;
-    public const int TargetMainCreator = 99;
-    public const int TargetPublisher = 100;
-    public const int TargetSubscriber = 101;
-    public const int Text = 102;
-    public const int TextListener = 103;
-    public const int Time = 104;
-    public const int TimeListener = 105;
-    public const int TimeLoop = 106;
-    public const int TimeMultiplier = 107;
-    public const int TransformMoveVector = 108;
-    public const int TransformPosition = 109;
-    public const int TransformPositionTo = 110;
-    public const int TransformRotation = 111;
-    public const int TransformRotationTo = 112;
-    public const int UnloadAssetsByLabel = 113;
-    public const int Vector3Value = 114;
-    public const int Velocity = 115;
-    public const int VelocityListener = 116;
-    public const int VelocityMax = 117;
-    public const int VelocityMin = 118;
-    public const int VelocityModifier = 119;
-    public const int VelocityVector = 120;
+    public const int PlayableAudio = 71;
+    public const int Point = 72;
+    public const int PointListener = 73;
+    public const int PointPublisher = 74;
+    public const int PointSubscriber = 75;
+    public const int Prefab = 76;
+    public const int RootCanvasChild = 77;
+    public const int RootOwner = 78;
+    public const int Rotation = 79;
+    public const int ScaleVector = 80;
+    public const int ScaleVectorListener = 81;
+    public const int SceneConfig = 82;
+    public const int SceneLoaded = 83;
+    public const int SceneLoadingProcess = 84;
+    public const int SceneLoadMode = 85;
+    public const int SceneLoadProgress = 86;
+    public const int SecondFloatValue = 87;
+    public const int SecondFloatValueListener = 88;
+    public const int Services = 89;
+    public const int SmoothRotation = 90;
+    public const int SmoothRotationSpeed = 91;
+    public const int Sprite = 92;
+    public const int SpriteListener = 93;
+    public const int StartTime = 94;
+    public const int StartTimeListener = 95;
+    public const int StrategyCreate = 96;
+    public const int StrategyProcess = 97;
+    public const int TargetEntityConfig = 98;
+    public const int TargetEntityListMember = 99;
+    public const int TargetMainCreator = 100;
+    public const int TargetPublisher = 101;
+    public const int TargetSubscriber = 102;
+    public const int Text = 103;
+    public const int TextListener = 104;
+    public const int Time = 105;
+    public const int TimeListener = 106;
+    public const int TimeLoop = 107;
+    public const int TimeMultiplier = 108;
+    public const int TransformMoveVector = 109;
+    public const int TransformPosition = 110;
+    public const int TransformPositionTo = 111;
+    public const int TransformRotation = 112;
+    public const int TransformRotationTo = 113;
+    public const int UnloadAssetsByLabel = 114;
+    public const int Vector3Value = 115;
+    public const int Velocity = 116;
+    public const int VelocityListener = 117;
+    public const int VelocityMax = 118;
+    public const int VelocityMin = 119;
+    public const int VelocityModifier = 120;
+    public const int VelocityVector = 121;
 
-    public const int TotalComponents = 121;
+    public const int TotalComponents = 122;
 
     public static readonly string[] componentNames = {
         "Acceleration",
@@ -204,6 +205,7 @@ public static class GameComponentsLookup {
         "Owner",
         "OwnerEntityConfigIndexKey",
         "OwnerEntityTypeIndexKey",
+        "PlayableAudio",
         "Point",
         "PointListener",
         "PointPublisher",
@@ -328,6 +330,7 @@ public static class GameComponentsLookup {
         typeof(OwnerComponent),
         typeof(OwnerEntityConfigIndexKeyComponent),
         typeof(OwnerEntityTypeIndexKeyComponent),
+        typeof(PlayableAudioComponent),
         typeof(PointComponent),
         typeof(PointListenerComponent),
         typeof(PointPublisherComponent),

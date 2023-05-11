@@ -11,17 +11,17 @@ public partial class GameEntity {
     public AudioConfigComponent audioConfig { get { return (AudioConfigComponent)GetComponent(GameComponentsLookup.AudioConfig); } }
     public bool hasAudioConfig { get { return HasComponent(GameComponentsLookup.AudioConfig); } }
 
-    public void AddAudioConfig(AudioConfig newAudioConfig) {
+    public void AddAudioConfig(AudioConfig newConfig) {
         var index = GameComponentsLookup.AudioConfig;
         var component = (AudioConfigComponent)CreateComponent(index, typeof(AudioConfigComponent));
-        component.Config = newAudioConfig;
+        component.Config = newConfig;
         AddComponent(index, component);
     }
 
-    public void ReplaceAudioConfig(AudioConfig newAudioConfig) {
+    public void ReplaceAudioConfig(AudioConfig newConfig) {
         var index = GameComponentsLookup.AudioConfig;
         var component = (AudioConfigComponent)CreateComponent(index, typeof(AudioConfigComponent));
-        component.Config = newAudioConfig;
+        component.Config = newConfig;
         ReplaceComponent(index, component);
     }
 

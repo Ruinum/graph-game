@@ -18,7 +18,10 @@ namespace Ruinum.ECS.Systems.Audio
             for (int i = 0; i < entities.Count; i++)
             {
                 var entity = entities[i];
-                _audioService.PlayAudio(entity, entity.audioConfig, entity.audioTarget);
+                if (_audioService.TryPlayAudio(entity, entity.audioConfig, entity.audioTarget, out var audioSource))
+                {
+                    entity.ReplacePlayableAudio(audioSource);                    
+                }
             }
         }
 

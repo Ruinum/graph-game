@@ -5,42 +5,49 @@ namespace Ruinum.ECS.Services.Interfaces
 {
     public sealed class AudioService : IAudioService
     {
-        public void PlayAudio(GameEntity entity, AudioConfigComponent audio, AudioTargetComponent audioTarget)
+        public bool TryPlayAudio(GameEntity entity, AudioConfigComponent audio, AudioTargetComponent audioTarget, out AudioSource audioSource)
         {
+            audioSource = default;
+
             if (!audioTarget.Target.TryGet(entity, out var target)) 
             {
                 LogExtention.Error($"Can't find target. {audio.Config.Clip}, {entity}");
-                return;
+                return false;
             }
 
             if (target.hasGameObject)
             {
-                PlayAudioOnObject(entity, audio, audioTarget);
-                return;
+                return TryPlayAudioOnObject(entity, audio, audioTarget, out audioSource);                
             }
 
             AudioConfig config = audio.Config;
-            AudioSource audioSource = CreateAudioSource(config);
+            audioSource = CreateAudioSource(config);
             audioSource.Play();
 
             if (!config.Loop) Object.Destroy(audioSource, config.Clip.length);
+
+            return true; 
         }
 
-        private void PlayAudioOnObject(GameEntity target,  AudioConfigComponent audio, AudioTargetComponent audioTarget)
+        private bool TryPlayAudioOnObject(GameEntity target,  AudioConfigComponent audio, AudioTargetComponent audioTarget, out AudioSource audioSource)
         {
+            audioSource = default;
+            
             if (!target.hasTransformPosition)
             {
                 LogExtention.Error($"Can't take {nameof(TransformPositionComponent)} from {target}, {audio.Config.Clip}, {target}");
-                return;
+                return false;
             }
 
             AudioConfig config = audio.Config;
-            AudioSource audioSource = CreateAudioSource(config);
+            audioSource = CreateAudioSource(config);
             audioSource.transform.position = target.transformPosition.Value;
             audioSource.transform.parent = target.gameObject.Value.transform;
             audioSource.Play();
             
             if (!config.Loop) Object.Destroy(audioSource, config.Clip.length);
+            
+            return true;
         }
 
         private AudioSource CreateAudioSource(AudioConfig config)
