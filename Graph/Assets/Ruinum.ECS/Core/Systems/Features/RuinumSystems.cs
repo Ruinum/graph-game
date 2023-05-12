@@ -17,12 +17,12 @@ namespace Ruinum.ECS.Systems.Features
             Add(new NextFrameDestroySystem(contexts.game));
             Add(new RootOwnerSystem(contexts.game));
             Add(new InputSystems(contexts, services));
-            Add(new TimeSystems(contexts, services));
+            Add(new TimeSystems(contexts));
 
             Add(new GameSystems(contexts, services));
             Add(new StateSystems(contexts, services));
             Add(new PrefabSystems(contexts, services));
-            Add(new AudioSystem(contexts.game, services.Audio));
+            Add(new AudioPlaySystem(contexts.game, services.Audio));
 
             Add(new SceneSystems(contexts, services));
 

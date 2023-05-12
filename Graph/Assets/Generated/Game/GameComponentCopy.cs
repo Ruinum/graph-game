@@ -17,6 +17,7 @@ public partial class GameEntity : BeastHour.Entity.Interfaces.IEntityComponentCo
             case GameComponentsLookup.AnyTextListener: ReplaceAnyTextListener(((AnyTextListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.AnyTextRemovedListener: ReplaceAnyTextRemovedListener(((AnyTextRemovedListenerComponent) fromComponent).value); return;
             case GameComponentsLookup.AudioConfig: ReplaceAudioConfig(((AudioConfigComponent) fromComponent).Config); return;
+            case GameComponentsLookup.AudioOnDestroy: ReplaceAudioOnDestroy(((AudioOnDestroyComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.AudioTarget: ReplaceAudioTarget(((AudioTargetComponent) fromComponent).Target); return;
             case GameComponentsLookup.BeforeMovementStrategyCreate: ReplaceBeforeMovementStrategyCreate(((BeforeMovementStrategyCreateComponent) fromComponent).Strategy); return;
             case GameComponentsLookup.BeforeMovementStrategyProcess: ReplaceBeforeMovementStrategyProcess(((BeforeMovementStrategyProcessComponent) fromComponent).Strategy); return;

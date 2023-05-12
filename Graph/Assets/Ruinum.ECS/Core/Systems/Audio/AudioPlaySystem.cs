@@ -4,11 +4,11 @@ using Ruinum.ECS.Services.Interfaces;
 
 namespace Ruinum.ECS.Systems.Audio
 {
-    public sealed class AudioSystem : ReactiveSystem<GameEntity>
+    public sealed class AudioPlaySystem : ReactiveSystem<GameEntity>
     {
         private readonly IAudioService _audioService;
 
-        public AudioSystem(IContext<GameEntity> context, IAudioService audioService) : base(context)
+        public AudioPlaySystem(IContext<GameEntity> context, IAudioService audioService) : base(context)
         {
             _audioService = audioService;
         }

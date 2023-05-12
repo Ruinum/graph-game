@@ -24,8 +24,6 @@ namespace Ruinum.ECS.Services.Interfaces
             audioSource = CreateAudioSource(config);
             audioSource.Play();
 
-            if (!config.Loop) Object.Destroy(audioSource, config.Clip.length);
-
             return true; 
         }
 

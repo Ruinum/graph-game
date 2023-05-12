@@ -1,10 +1,8 @@
-﻿using Ruinum.ECS.Services.Interfaces;
-
-namespace Ruinum.ECS.Systems
+﻿namespace Ruinum.ECS.Systems.Features
 {
     public class TimeSystems : Feature
     {
-        public TimeSystems(Contexts contexts, IGameServices services)
+        public TimeSystems(Contexts contexts)
         {
             Add(new TimeMultiplierSystem(contexts.game));
             Add(new TimeStartSystem(contexts.game));
