@@ -44,7 +44,7 @@ MonoBehaviour:
       Data: 2|StrategyProcessComponent, Assembly-CSharp
     - Name: Strategy
       Entry: 7
-      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainEntityStrategy,
+      Data: 3|Ruinum.ECS.Configurations.Game.Strategies.ConditionChainAnyEntityStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -61,7 +61,23 @@ MonoBehaviour:
       Data: 5|Ruinum.ECS.Configurations.Game.Strategies.StrategyConditionData, Assembly-CSharp
     - Name: Condition
       Entry: 7
-      Data: 6|Ruinum.ECS.Configurations.Conditions.Entities.Input.InputButtonCondition,
+      Data: 6|Ruinum.ECS.Core.Conditions.AllCondition, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Negate
+      Entry: 5
+      Data: false
+    - Name: Conditions
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[Ruinum.ECS.Core.Conditions.IEntityCondition,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 8|Ruinum.ECS.Configurations.Conditions.Entities.Input.InputButtonCondition,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -81,16 +97,56 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|Ruinum.ECS.Core.Conditions.RaycastFromCameraHitCondition, Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Negate
+      Entry: 5
+      Data: false
     - Name: Strategy
       Entry: 7
-      Data: 7|Ruinum.ECS.Configurations.Game.Strategies.Targets.ReplaceTargetStrategy,
+      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Layers.SimpleLayerMaskStrategy,
+        Assembly-CSharp
+    - Name: Logging
+      Entry: 5
+      Data: false
+    - Name: Layer
+      Entry: 7
+      Data: UnityEngine.LayerMask, UnityEngine.CoreModule
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Strategy
+      Entry: 7
+      Data: 11|Ruinum.ECS.Configurations.Game.Strategies.Targets.ReplaceTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Target
       Entry: 7
-      Data: 8|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
+      Data: 12|Ruinum.ECS.Configurations.Game.Strategies.Targets.TargetFromComponentStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -100,14 +156,14 @@ MonoBehaviour:
       Data: 
     - Name: Strategy
       Entry: 7
-      Data: 9|Ruinum.ECS.Configurations.Game.Strategies.Targets.RaycastFromCameraToCursorTargetStrategy,
+      Data: 13|Ruinum.ECS.Configurations.Game.Strategies.Targets.RaycastFromCameraToCursorTargetStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
       Data: false
     - Name: Strategy
       Entry: 7
-      Data: 10|Ruinum.ECS.Configurations.Game.Strategies.Layers.SimpleLayerMaskStrategy,
+      Data: 14|Ruinum.ECS.Configurations.Game.Strategies.Layers.SimpleLayerMaskStrategy,
         Assembly-CSharp
     - Name: Logging
       Entry: 5
@@ -147,7 +203,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|TargetEntityConfigComponent, Assembly-CSharp
+      Data: 15|TargetEntityConfigComponent, Assembly-CSharp
     - Name: Value
       Entry: 10
       Data: 2

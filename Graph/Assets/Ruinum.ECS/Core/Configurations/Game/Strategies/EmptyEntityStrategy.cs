@@ -2,7 +2,7 @@
 
 namespace Ruinum.ECS.Core.Configurations.Game.Strategies
 {
-    public class EmptyEntityStrategy : EntityStrategy
+    public sealed class EmptyEntityStrategy : EntityStrategy
     {
         public override bool Process(GameEntity entity)
         {
