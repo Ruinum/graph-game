@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13d36cedaea0d9e44b40a35f0524ce9b, type: 3}
-  m_Name: PlayerGrassRaceDataContainer
+  m_Name: EnemyRaceDataContainer
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -189,7 +189,7 @@ MonoBehaviour:
       Data: 13|UnityEngine.AddressableAssets.AssetReferenceGameObject, Unity.Addressables
     - Name: m_AssetGUID
       Entry: 1
-      Data: 4aab70a438b72ba4d8b7b3c313e3dd0a
+      Data: 90489c8d45bca7d49851700717e37a5c
     - Name: m_SubObjectName
       Entry: 1
       Data: 

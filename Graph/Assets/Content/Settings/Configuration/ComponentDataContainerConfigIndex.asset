@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: ComponentDataContainerConfigIndex
   m_EditorClassIdentifier: 
   _configs:
-  - {fileID: 11400000, guid: 6ac903eca2c69cb40940ade818e9d9f7, type: 2}
-  - {fileID: 11400000, guid: ac5636bf4d3cdeb4bba526acccb2d63c, type: 2}
-  - {fileID: 11400000, guid: 6529c69dd388a2749b2763c15460625f, type: 2}
   - {fileID: 11400000, guid: 447d778a46cc6074492e92c7ac3d8581, type: 2}
+  - {fileID: 11400000, guid: 887578f206ddd014abd934073919a16a, type: 2}
+  - {fileID: 11400000, guid: b324b8246bd6fe34cbfe440f2b56f607, type: 2}
