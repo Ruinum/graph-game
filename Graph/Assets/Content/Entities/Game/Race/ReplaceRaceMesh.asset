@@ -19,7 +19,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 863a3ccb66dc0654ba5c9a7ba064219a, type: 2}
     - {fileID: 11400000, guid: 68577da5b4099c74e936eaaa37925805, type: 2}
     - {fileID: 11400000, guid: ec233dadf3928b241a5086eee5c4cfd2, type: 2}
-    - {fileID: 11400000, guid: eab9ce4cec696874aba7eebab0de4b3f, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -200,17 +199,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: DataType
-      Entry: 7
-      Data: 19|Ruinum.ECS.Configurations.Components.ComponentDataTypeConfigElement`1[[GameObjectComponentData,
-        Assembly-CSharp]], Assembly-CSharp
-    - Name: DataTypeConfig
-      Entry: 10
-      Data: 3
-    - Name: Id
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
