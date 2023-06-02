@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2636044309602421319}
   - component: {fileID: 438585148398476962}
   - component: {fileID: -6104630380755854735}
+  - component: {fileID: 7877241544375550463}
   m_Layer: 5
   m_Name: LocalUnitAmountUI
   m_TagString: Untagged
@@ -95,8 +96,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 1.8
+  m_fontSizeBase: 1.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -170,3 +171,15 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &7877241544375550463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917388296212343842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ceb328fcce5a145801fa187922e2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
